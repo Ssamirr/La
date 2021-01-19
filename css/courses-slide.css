@@ -1,0 +1,132 @@
+
+
+
+/* courses-subjects section */
+
+
+.unit-subjects a{
+	text-decoration: none;
+	color: #2caebf;
+	font-size: 15px;
+}
+
+.unit-subjects a:hover{
+	color: #087d8c;
+}
+
+
+.unit-subject{
+	color: #0f7c90;
+	background-color: white;
+	border: 1px solid #d1d1d1;
+	border-radius: 3px;
+	height: 50px;
+	width: 100%;
+	font-weight: bold;
+	font-size: 15px;
+	margin-top: 10px;
+}
+
+.unit-subject:hover{
+	color: #0c6170;
+}
+
+
+
+
+
+
+/* end of courses-subjects section */
+
+
+
+
+
+/* courses-slide section */
+
+
+
+.courses-slide{
+	margin-top: 50px;
+}
+
+
+
+.unit-title{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+
+.unit-title h2{
+	font-size: 25px;
+	font-weight: bold;
+	color: #3c3b37;
+}
+
+
+
+.course-card-image img{
+	width: 100%;
+}
+
+
+.course-card-main .course-card-title{
+	font-weight: bold;
+	font-size: 14px;
+	color: #3c3b37;
+	margin-top: 8px;
+}
+
+.course-card-main .course-card-instructor{
+	font-size: 12px;
+	color: #595959;
+	margin-top: 2px;
+	margin-bottom: 2px; 
+}
+
+
+.course-card-points{
+	color: #c96100;
+	font-weight: bold;
+}
+
+.course-card-stars i{
+	color: #ff962e;
+	font-size: 13px;
+}
+
+.course-card-students{
+	font-size: 13px;
+	color: #595959;
+}
+
+
+
+.course-card-price{
+	display: flex;
+}
+
+.course-card-price h2{
+	font-weight: bold;
+	font-size: 15px;
+	color: #3c3b37;
+	margin-top: 5px;
+}
+
+
+.course-card-price del{
+	margin-top: 3px;
+	margin-left: 10px;
+	font-size: 14px;
+	color: #595959;
+}
+
+
+
+
+/* end of courses-slide section */
+
+
+
+

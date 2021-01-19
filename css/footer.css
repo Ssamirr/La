@@ -1,0 +1,36 @@
+
+
+footer{
+	margin-top: 50px;
+}
+
+
+
+.footer-link a{
+	text-decoration: none;
+	color: #2caebf;
+	font-size: 15px;
+}
+
+.footer-link a:hover{
+	color: #087d8c;
+}
+
+
+
+.footer-bottom{
+	margin-top: 50px;
+}
+
+
+.footer-bottom img{
+	height: 50px;
+	width: 150px;
+}
+
+
+.footer-bottom p{
+	color: #767a7a;
+	font-size: 13px;
+	text-align: right;
+}
