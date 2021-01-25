@@ -1,6 +1,6 @@
 
 .mp-hero{
-	height: 500px;
+	/* height: 500px; */
 }
 
 
@@ -21,9 +21,9 @@
 .mp-hero-text{
 	background-color: white;
 	position: absolute;
-	top: 180px;
+	top: 90px;
 	left: 50px;
-	width: 35%;
+	width: 415px;
 }
 
 .mp-hero-text h1{
@@ -43,16 +43,29 @@
 }
 
 
+@media (max-width: 1200px){
+	.mp-hero-text p{
+		font-size: 1rem;
+	}
+	.mp-hero-text h1{
+		font-size: 1.5rem;
+	}
+	.mp-hero-text{
+		width: 360px;
+	}
+}
 
+@media (max-width: 982px){
+	.mp-hero-text {
+		top: 43px;
+		left: 30px;
+}
+}
 
-@media (max-width: 500px){
+@media (max-width: 767px){
 	.mp-hero-text{
 		position: static;
 		width: 100%;
-	}
-
-	.mp-hero-image{
-		height: 150px !important;
 	}
 
 	.mp-hero, .mp-hero-content{

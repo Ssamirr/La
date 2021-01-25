@@ -1,0 +1,113 @@
+.categories-name-ul li{
+    margin-right: 20px;
+    white-space: nowrap;
+}
+
+.categories-name-ul{
+    height: 45px;
+}
+
+.more-categories-info ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+
+.more-categories{
+    position: relative;
+    cursor: pointer;
+    height: 100%;
+    align-items: center;
+    display: flex;
+    padding: 0px 10px;
+}
+
+.more-categories-info{
+    position: absolute;
+    width: 230px;
+    background: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,.08),0 4px 12px rgba(0,0,0,.08);
+    border-radius: 5px;
+    top: 45px;
+    z-index: 2;
+    padding: 10px 20px;
+    text-align: center;
+    right: 0;
+    display: none;
+}
+
+.more-categories:hover .more-categories-info{
+    display: block;
+}
+
+.category-namee{
+    box-shadow: 0 2px 4px rgba(0,0,0,.08),0 4px 12px rgba(0,0,0,.08);
+
+}
+
+.popular-topic-category li{
+    margin-right: 10px;
+}
+
+.popular-topic-category li a{
+    font-size: 18px;
+}
+
+.popular-topic-category .active-li-a{
+    font-weight: bold;
+    border-bottom: 2px solid #3c3b37;
+}
+
+.popular-topic-category li:last-of-type{
+    margin-right: 0px;
+}
+
+.popular-topic-category ul{
+    border-bottom: 1px solid rgba(0,0,0,.1);
+}
+
+.course-advice{
+    font-size: 14px;
+}
+
+.text-style{
+    font-size: 12px;
+    color: #595959;
+}
+
+.owl-carousel-most-view .owl-nav .owl-prev, .owl-carousel-most-view .owl-nav .owl-next {
+    top: 18%!important;
+}
+
+.owl-carousel-advice-topic .owl-nav .owl-next, .owl-carousel-advice-topic .owl-nav .owl-prev {
+    top: 29% !important;
+}
+
+@media (min-width: 768px){
+    .owl-carousel-most-view .owl-nav .owl-prev, .owl-carousel-most-view .owl-nav .owl-next {
+        top: calc(50% - 40px) !important;
+    }
+    .owl-carousel-most-view .item{
+        padding: 10px;
+        border:1px solid rgba(0,0,0,.1);
+    }
+    .owl-carousel-most-view .course-card-price{
+        position: absolute;
+    }
+}
+
+@media (max-width: 767px){
+    .owl-carousel-most-view .course-card-image{
+        padding: 0px;
+    }
+    .owl-carousel-most-view .course-card-main{
+        padding: 0px;
+    }
+}
+
+@media (max-width: 1000px){
+    .category-namee{
+        display: none;
+    }
+}

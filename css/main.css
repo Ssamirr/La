@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    overflow-x: hidden;
+    font-size: 14px;
+}
+
+li{
+    list-style: none;
+}
+
+.my-container{
+    max-width: 1255px;
+    margin: auto;
+    padding: 0px 25px;
+}
+
+a{
+    text-decoration: none !important;
+    color: #3c3b37;
+}
+
+a:hover{
+    color: #0f7c90 !important;
+}

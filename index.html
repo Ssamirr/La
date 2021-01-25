@@ -1,10 +1,14 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+		integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+		integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+		crossorigin="anonymous" />
 
 	<link rel="stylesheet" type="text/css" href="css/footer.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -12,10 +16,13 @@
 	<link rel="stylesheet" type="text/css" href="css/mp-hero.css">
 	<link rel="stylesheet" type="text/css" href="css/tn-selected-categories.css">
 	<link rel="stylesheet" type="text/css" href="css/la-navbar.css">
-	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
 
 	<title>LA</title>
 </head>
+
 <body>
 
 
@@ -26,16 +33,85 @@
 				<img src="https://www.udemy.com/staticx/udemy/images/v6/logo-coral.svg">
 			</div>
 
-			<div class="la-navbar-categories">
+			<div class="la-navbar-categories position-relative">
 				<a href="#">Kategoriler</a>
+				<ul class="menu-list">
+					<li class="position-relative menu-list-li">
+						<a class="d-flex justify-content-between" href="">
+							<div>Yazılım işletme</div>
+							<div class="flex-align-center"><i class="header-arrow-right fa fa-angle-right"
+									style="font-size:14px" aria-hidden="true"></i>
+							</div>
+						</a>
+						<ul class="second-menu-list">
+							<li class="second-menu-list-li position-relative">
+								<a class="d-flex justify-content-between" href="">
+									<div>Yazılım işletme</div>
+									<div class="flex-align-center"><i class="header-arrow-right fa fa-angle-right"
+											style="font-size:14px" aria-hidden="true"></i>
+									</div>
+								</a>
+								<ul class="third-menu-list">
+									<li>
+										<a href="">Yazılım işletme</a>
+									</li>
+									<li>
+										<a href="">Yazılım işletme</a>
+									</li>
+									<li>
+										<a href="">Yazılım işletme</a>
+									</li>
+									<li>
+										<a href="">Yazılım işletme</a>
+									</li>
+									<li>
+										<a href="">Yazılım işletme</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a class="d-flex justify-content-between" href="">
+									<div>Yazılım işletme</div>
+									<div class="flex-align-center"><i class="header-arrow-right fa fa-angle-right"
+											style="font-size:14px" aria-hidden="true"></i>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a class="d-flex justify-content-between" href="">
+									<div>Yazılım işletme</div>
+									<div class="flex-align-center"><i class="header-arrow-right fa fa-angle-right"
+											style="font-size:14px" aria-hidden="true"></i>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a class="d-flex justify-content-between" href="">
+									<div>Yazılım işletme</div>
+									<div class="flex-align-center"><i class="header-arrow-right fa fa-angle-right"
+											style="font-size:14px" aria-hidden="true"></i>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
 			</div>
 
-			<div class="la-navbar-search">
-				<input type="" name="">
+			<div class="la-navbar-search position-relative">
+				<input class="search-field" placeholder="Dilediğiniz şeyi arayın" type="" name="">
+				<button class="search-button"><i class="fa fa-search search-icon"></i></button>
+
 			</div>
 
 			<div class="la-navbar-instructor">
 				<a href="#">Eğitmen</a>
+				<div class="instructor-info">
+					<p class="m-0 p-0">Bildiklerinizi fırsata dönüştürün ve tüm dünyada milyonlarca kişiye ulaşın.</p>
+					<a class="more-info-instructor" href="">
+						<span>Daha fazla bilgi edinin</span>
+					</a>
+				</div>
 			</div>
 
 			<div class="la-navbar-student">
@@ -45,57 +121,619 @@
 			<div class="la-navbar-user-area">
 				<div class="la-navbar-wishlist">
 					<i class="far fa-heart"></i>
+					<div class="wishlist-info">
+						<p class="m-0 p-0">İstek listeniz boş.</p>
+						<a class="more-info-wishlist" href="">
+							<span>Kursları keşfedin</span>
+						</a>
+					</div>
 				</div>
 				<div class="la-navbar-cart">
 					<i class="fa fa-shopping-cart"></i>
+					<div class="shopping-info">
+						<p class="m-0 p-0">Sepetiniz boş.</p>
+						<a class="more-info-shopping" href="">
+							<span>Alışverişe devam et</span>
+						</a>
+					</div>
 				</div>
 				<div class="la-navbar-notifications">
 					<i class="far fa-bell"></i>
+					<div class="notifications-info">
+						<div class="d-flex justify-content-between top-notifications-info">
+							<span>Bildirimler</span>
+							<a href="">Ayarlar</a>
+						</div>
+						<p class="p-0 m-0 bottom-notification-info">Bildirim yok.</p>
+					</div>
 				</div>
 				<div class="la-navbar-profile">
 					<img src="img/profile.jpg">
+					<div class="profile-info">
+						<div class="main-section-profile-info">
+							<div style="width:70px">
+								<img class="h-100 w-100" src="img/profile.jpg">
+							</div>
+							<div class="d-flex flex-column align-items-start name-profile-info">
+								<a href="">Samir Sardarli</a>
+								<span>sardarlisamir@gmail.com</span>
+							</div>
+						</div>
+
+						<hr>
+
+						<div class="items-profile-info">
+							<ul>
+								<li>
+									<a href="">Öğrenim İçeriğim</a>
+								</li>
+								<li>
+									<a href="">Sepetim</a>
+								</li>
+								<li>
+									<a href="">Wishlist</a>
+								</li>
+								<li>
+									<a href="">Udemy'de Eğitim Verin</a>
+								</li>
+							</ul>
+						</div>
+
+						<hr>
+
+						<div class="section-notification-profile-info">
+							<ul>
+								<li>
+									<a href="">Bildirimler</a>
+								</li>
+								<li>
+									<a href="">Mesajlar</a>
+								</li>
+							</ul>
+						</div>
+
+						<hr>
+
+						<div class="section-info-methods-profile-info">
+							<ul>
+								<li>
+									<a href="">Hesap ayarları</a>
+								</li>
+								<li>
+									<a href="">Ödeme yöntemleri</a>
+								</li>
+								<li>
+									<a href="">Udemy kredileri</a>
+								</li>
+								<li>
+									<a href="">Satın alma geçmişi</a>
+								</li>
+							</ul>
+						</div>
+
+						<hr>
+
+						<div class="section-edit-profile-info">
+							<ul>
+								<li>
+									<a href="">Herkese açık profil</a>
+								</li>
+								<li>
+									<a href="">Profili düzenle</a>
+								</li>
+							</ul>
+						</div>
+
+						<hr>
+
+						<div class="section-exit-profile-info">
+							<ul>
+								<li>
+									<a href="">Yardım</a>
+								</li>
+								<li>
+									<a href="">Oturumu kapat</a>
+								</li>
+							</ul>
+						</div>
+
+					</div>
+
 				</div>
 			</div>
-						
-				
+
+
 		</div>
-		
+
+		<div class="for-background-mobile">
+		</div>
+
+
+
+		<div class="mobile-navbar">
+			<div class="header-navbar">
+				<div class="mobile-navbar-row">
+					<div class="hamburger-menu d-flex">
+						<i class="icon-style fa fa-bars"></i>
+					</div>
+					<div>
+						<img src="https://www.udemy.com/staticx/udemy/images/v6/logo-coral.svg" alt="Udemy"
+							style="vertical-align: middle;" width="96" height="28">
+					</div>
+					<div class="d-flex right-side-mobile-menu">
+						<div class="d-flex mr-2 search-button-mobile">
+							<i class="icon-style fa fa-search"></i>
+						</div>
+						<div class="d-flex">
+							<i class="d-flex icon-style fa fa-shopping-cart"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+			<!-- ..................................... -->
+			<div class="mobile-profile-menuu">
+				<div class="exit-icon-profile-menuu "><i class="icon-style fa fa-remove" aria-hidden="true"></i></div>
+				<div style="overflow-y: scroll;	padding: 10px 20px;	height: 100%;">
+					<div class="main-section-profile-menuu">
+						<div class="profile-img" style="width:70px">
+							<img class="h-100 w-100" src="img/profile.jpg">
+						</div>
+						<div class="d-flex w-100 justify-content-between name-profile-info">
+							<div class="d-flex flex-column align-items-start"><a href="javascript:void(0)">Samir
+									Sardarli</a>
+								<span>sardarlisamir@gmail.com</span></div>
+							<div>
+								<i class="header-arrow-right fa fa-angle-right" style="font-size:14px"
+									aria-hidden="true"></i>
+							</div>
+						</div>
+					</div>
+
+					<hr>
+
+					<div class="items-profile-menuu">
+						<ul class="w-100">
+							<h6 style="color: #73726c;font-weight: bold;">Öğrenin</h6>
+							<li class="w-100">
+								<a class="w-100 d-flex align-items-center justify-content-between" href="">
+									<span>Öğrenim İçeriğim</span>
+									<span><i class="header-arrow-right fa fa-angle-right" style="font-size:14px"
+											aria-hidden="true"></i></span>
+								</a>
+
+							</li>
+						</ul>
+					</div>
+
+					<hr>
+
+					<div class="items-profile-menuu">
+						<ul class="w-100">
+							<h6 style="color: #73726c;font-weight: bold;">En popüler</h6>
+							<li class="w-100">
+								<a class="w-100 d-flex align-items-center justify-content-between" href="">
+									<span>Web Geliştirme</span>
+									<span><i class="header-arrow-right fa fa-angle-right" style="font-size:14px"
+											aria-hidden="true"></i></span>
+								</a>
+
+							</li>
+							<li class="w-100">
+								<a class="w-100 d-flex align-items-center justify-content-between" href="">
+									<span>Mobil Yazılım Geliştirme</span>
+									<span><i class="header-arrow-right fa fa-angle-right" style="font-size:14px"
+											aria-hidden="true"></i></span>
+								</a>
+
+							</li>
+							<li class="w-100">
+								<a class="w-100 d-flex align-items-center justify-content-between" href="">
+									<span>Oyun Geliştirme</span>
+									<span><i class="header-arrow-right fa fa-angle-right" style="font-size:14px"
+											aria-hidden="true"></i></span>
+								</a>
+
+							</li>
+							<li class="w-100">
+								<a class="w-100 d-flex align-items-center justify-content-between" href="">
+									<span>Girişimcilik</span>
+									<span><i class="header-arrow-right fa fa-angle-right" style="font-size:14px"
+											aria-hidden="true"></i></span>
+								</a>
+
+							</li>
+							<li class="w-100">
+								<a class="w-100 d-flex align-items-center justify-content-between" href="">
+									<span>İş Analitiği ve Zekası</span>
+									<span><i class="header-arrow-right fa fa-angle-right" style="font-size:14px"
+											aria-hidden="true"></i></span>
+								</a>
+
+							</li>
+							<li class="w-100">
+								<a class="w-100 d-flex align-items-center justify-content-between" href="">
+									<span>Dijital Pazarlama</span>
+									<span><i class="header-arrow-right fa fa-angle-right" style="font-size:14px"
+											aria-hidden="true"></i></span>
+								</a>
+
+							</li>
+							<li class="w-100">
+								<a class="w-100 d-flex align-items-center justify-content-between" href="">
+									<span>Kişisel Gelişim</span>
+									<span><i class="header-arrow-right fa fa-angle-right" style="font-size:14px"
+											aria-hidden="true"></i></span>
+								</a>
+
+							</li>
+							<li class="w-100">
+								<a class="w-100 d-flex align-items-center justify-content-between" href="">
+									<span>Kişisel Gelişim</span>
+									<span><i class="header-arrow-right fa fa-angle-right" style="font-size:14px"
+											aria-hidden="true"></i></span>
+								</a>
+
+							</li>
+							<li class="w-100">
+								<a class="w-100 d-flex align-items-center justify-content-between" href="">
+									<span>Kişisel Gelişim</span>
+									<span><i class="header-arrow-right fa fa-angle-right" style="font-size:14px"
+											aria-hidden="true"></i></span>
+								</a>
+
+							</li>
+							<li class="w-100">
+								<a class="w-100 d-flex align-items-center justify-content-between" href="">
+									<span>Kişisel Gelişim</span>
+									<span><i class="header-arrow-right fa fa-angle-right" style="font-size:14px"
+											aria-hidden="true"></i></span>
+								</a>
+
+							</li>
+							<li class="w-100">
+								<a class="w-100 d-flex align-items-center justify-content-between" href="">
+									<span>Kişisel Gelişim</span>
+									<span><i class="header-arrow-right fa fa-angle-right" style="font-size:14px"
+											aria-hidden="true"></i></span>
+								</a>
+
+							</li>
+							<li class="w-100">
+								<a class="w-100 d-flex align-items-center justify-content-between" href="">
+									<span>Kişisel Gelişim</span>
+									<span><i class="header-arrow-right fa fa-angle-right" style="font-size:14px"
+											aria-hidden="true"></i></span>
+								</a>
+
+							</li>
+						</ul>
+					</div>
+
+					<hr>
+
+					<div class="items-profile-menuu">
+						<ul class="w-100">
+							<h6 style="color: #73726c;font-weight: bold;">En popüler</h6>
+							<li class="w-100">
+								<a class="w-100 d-flex align-items-center justify-content-between" href="">
+									<span>Web Geliştirme</span>
+									<span><i class="header-arrow-right fa fa-angle-right" style="font-size:14px"
+											aria-hidden="true"></i></span>
+								</a>
+
+							</li>
+							<li class="w-100">
+								<a class="w-100 d-flex align-items-center justify-content-between" href="">
+									<span>Mobil Yazılım Geliştirme</span>
+									<span><i class="header-arrow-right fa fa-angle-right" style="font-size:14px"
+											aria-hidden="true"></i></span>
+								</a>
+
+							</li>
+							<li class="w-100">
+								<a class="w-100 d-flex align-items-center justify-content-between" href="">
+									<span>Oyun Geliştirme</span>
+									<span><i class="header-arrow-right fa fa-angle-right" style="font-size:14px"
+											aria-hidden="true"></i></span>
+								</a>
+
+							</li>
+							<li class="w-100">
+								<a class="w-100 d-flex align-items-center justify-content-between" href="">
+									<span>Girişimcilik</span>
+									<span><i class="header-arrow-right fa fa-angle-right" style="font-size:14px"
+											aria-hidden="true"></i></span>
+								</a>
+
+							</li>
+							<li class="w-100">
+								<a class="w-100 d-flex align-items-center justify-content-between" href="">
+									<span>İş Analitiği ve Zekası</span>
+									<span><i class="header-arrow-right fa fa-angle-right" style="font-size:14px"
+											aria-hidden="true"></i></span>
+								</a>
+
+							</li>
+							<li class="w-100">
+								<a class="w-100 d-flex align-items-center justify-content-between" href="">
+									<span>Dijital Pazarlama</span>
+									<span><i class="header-arrow-right fa fa-angle-right" style="font-size:14px"
+											aria-hidden="true"></i></span>
+								</a>
+
+							</li>
+							<li class="w-100">
+								<a class="w-100 d-flex align-items-center justify-content-between" href="">
+									<span>Kişisel Gelişim</span>
+									<span><i class="header-arrow-right fa fa-angle-right" style="font-size:14px"
+											aria-hidden="true"></i></span>
+								</a>
+
+							</li>
+							<li class="w-100">
+								<a class="w-100 d-flex align-items-center justify-content-between" href="">
+									<span>Kişisel Gelişim</span>
+									<span><i class="header-arrow-right fa fa-angle-right" style="font-size:14px"
+											aria-hidden="true"></i></span>
+								</a>
+
+							</li>
+							<li class="w-100">
+								<a class="w-100 d-flex align-items-center justify-content-between" href="">
+									<span>Kişisel Gelişim</span>
+									<span><i class="header-arrow-right fa fa-angle-right" style="font-size:14px"
+											aria-hidden="true"></i></span>
+								</a>
+
+							</li>
+							<li class="w-100">
+								<a class="w-100 d-flex align-items-center justify-content-between" href="">
+									<span>Kişisel Gelişim</span>
+									<span><i class="header-arrow-right fa fa-angle-right" style="font-size:14px"
+											aria-hidden="true"></i></span>
+								</a>
+
+							</li>
+							<li class="w-100">
+								<a class="w-100 d-flex align-items-center justify-content-between" href="">
+									<span>Kişisel Gelişim</span>
+									<span><i class="header-arrow-right fa fa-angle-right" style="font-size:14px"
+											aria-hidden="true"></i></span>
+								</a>
+
+							</li>
+							<li class="w-100">
+								<a class="w-100 d-flex align-items-center justify-content-between" href="">
+									<span>Kişisel Gelişim</span>
+									<span><i class="header-arrow-right fa fa-angle-right" style="font-size:14px"
+											aria-hidden="true"></i></span>
+								</a>
+
+							</li>
+						</ul>
+					</div>
+				</div>
+
+
+			</div>
+
+			<!-- ..................search.......................... -->
+			<div class="w-100 h-100 search-in-mobile">
+				<input placeholder="Dilediğiniz şeyi arayın" class="w-100 h-100" type="text">
+				<div class="search-icon-mobile "><i class="icon-style fa fa-search"></i></div>
+				<div class="exit-icon-mobile "><i class="icon-style fa fa-remove"></i></div>
+			</div>
+		</div>
+		</div>
+
 	</section>
 
 
 	<section class="tn-selected-categories">
-		<div class="tn-selected-main-categories">
-			<div class="container">
-				<ul class="list-inline">
-					<li class="list-inline-item">
-						<a class="tn-selected-category" href="">Yazılım Geliştirme</a>
+		<div class="tn-selected-main-categories position-relative">
+			<div class="my-container">
+				<ul class="list-inline all-categoriess m-0">
+					<li class="list-inline-item list-items">
+						<a class="tn-selected-category list-items-a" href="">Yazılım Geliştirme</a>
+						<ul class="list-inline subcategory-list">
+							<li class="list-inline-item">
+								<a class="tn-selected-category" href="">Web Geliştirme</a>
+							</li>
+							<li class="list-inline-item ">
+								<a class="tn-selected-category" href="">Web Geliştirme</a>
+							</li>
+							<li class="list-inline-item ">
+								<a class="tn-selected-category" href="">Web Geliştirme</a>
+							</li>
+							<li class="list-inline-item ">
+								<a class="tn-selected-category" href="">Web Geliştirme</a>
+							</li>
+							<li class="list-inline-item">
+								<a class="tn-selected-category" href="">Web Geliştirme</a>
+							</li>
+						</ul>
 					</li>
-					<li class="list-inline-item">
-						<a class="tn-selected-category" href="">İşletme</a>
+					<li class="list-inline-item list-items">
+						<a class="tn-selected-category list-items-a" href="">İşletme</a>
+						<ul class="list-inline subcategory-list">
+							<li class="list-inline-item">
+								<a class="tn-selected-category" href="">Web Geliştirme</a>
+							</li>
+							<li class="list-inline-item ">
+								<a class="tn-selected-category" href="">Web Geliştirme</a>
+							</li>
+							<li class="list-inline-item ">
+								<a class="tn-selected-category" href="">Web Geliştirme</a>
+							</li>
+							<li class="list-inline-item ">
+								<a class="tn-selected-category" href="">Web Geliştirme</a>
+							</li>
+							<li class="list-inline-item">
+								<a class="tn-selected-category" href="">Web Geliştirme</a>
+							</li>
+						</ul>
 					</li>
-					<li class="list-inline-item">
-						<a class="tn-selected-category" href="">Finans ve Muhasebe</a>
+					<li class="list-inline-item list-items">
+						<a class="tn-selected-category list-items-a" href="">Finans ve Muhasebe</a>
+						<ul class="list-inline subcategory-list">
+							<li class="list-inline-item">
+								<a class="tn-selected-category" href="">Web Geliştirme</a>
+							</li>
+							<li class="list-inline-item ">
+								<a class="tn-selected-category" href="">Web Geliştirme</a>
+							</li>
+							<li class="list-inline-item ">
+								<a class="tn-selected-category" href="">Web Geliştirme</a>
+							</li>
+							<li class="list-inline-item ">
+								<a class="tn-selected-category" href="">Web Geliştirme</a>
+							</li>
+							<li class="list-inline-item">
+								<a class="tn-selected-category" href="">Web Geliştirme</a>
+							</li>
+						</ul>
 					</li>
-					<li class="list-inline-item">
-						<a class="tn-selected-category" href="">BT ve Yazılım</a>
+					<li class="list-inline-item list-items">
+						<a class="tn-selected-category list-items-a" href="">BT ve Yazılım</a>
+						<ul class="list-inline subcategory-list">
+							<li class="list-inline-item">
+								<a class="tn-selected-category" href="">Web Geliştirme</a>
+							</li>
+							<li class="list-inline-item ">
+								<a class="tn-selected-category" href="">Web Geliştirme</a>
+							</li>
+							<li class="list-inline-item ">
+								<a class="tn-selected-category" href="">Web Geliştirme</a>
+							</li>
+							<li class="list-inline-item ">
+								<a class="tn-selected-category" href="">Web Geliştirme</a>
+							</li>
+							<li class="list-inline-item">
+								<a class="tn-selected-category" href="">Web Geliştirme</a>
+							</li>
+						</ul>
 					</li>
-					<li class="list-inline-item">
-						<a class="tn-selected-category" href="">Ofiste Verimlilik</a>
+					<li class="list-inline-item list-items">
+						<a class="tn-selected-category list-items-a" href="">Ofiste Verimlilik</a>
+						<ul class="list-inline subcategory-list">
+							<li class="list-inline-item">
+								<a class="tn-selected-category" href="">Web Geliştirme</a>
+							</li>
+							<li class="list-inline-item ">
+								<a class="tn-selected-category" href="">Web Geliştirme</a>
+							</li>
+							<li class="list-inline-item ">
+								<a class="tn-selected-category" href="">Web Geliştirme</a>
+							</li>
+							<li class="list-inline-item ">
+								<a class="tn-selected-category" href="">Web Geliştirme</a>
+							</li>
+							<li class="list-inline-item">
+								<a class="tn-selected-category" href="">Web Geliştirme</a>
+							</li>
+						</ul>
 					</li>
-					<li class="list-inline-item">
-						<a class="tn-selected-category" href="">Kişisel Gelişim</a>
+					<li class="list-inline-item list-items ">
+						<a class="tn-selected-category list-items-a" href="">Kişisel Gelişim</a>
+						<ul class="list-inline subcategory-list">
+							<li class="list-inline-item">
+								<a class="tn-selected-category" href="">Web Geliştirme</a>
+							</li>
+							<li class="list-inline-item ">
+								<a class="tn-selected-category" href="">Web Geliştirme</a>
+							</li>
+							<li class="list-inline-item ">
+								<a class="tn-selected-category" href="">Web Geliştirme</a>
+							</li>
+							<li class="list-inline-item ">
+								<a class="tn-selected-category" href="">Web Geliştirme</a>
+							</li>
+							<li class="list-inline-item">
+								<a class="tn-selected-category" href="">Web Geliştirme</a>
+							</li>
+						</ul>
 					</li>
-					<li class="list-inline-item">
-						<a class="tn-selected-category" href="">Tasarım</a>
+					<li class="list-inline-item list-items">
+						<a class="tn-selected-category list-items-a" href="">Tasarım</a>
+						<ul class="list-inline subcategory-list">
+							<li class="list-inline-item">
+								<a class="tn-selected-category" href="">Web Geliştirme</a>
+							</li>
+							<li class="list-inline-item ">
+								<a class="tn-selected-category" href="">Web Geliştirme</a>
+							</li>
+							<li class="list-inline-item ">
+								<a class="tn-selected-category" href="">Web Geliştirme</a>
+							</li>
+							<li class="list-inline-item ">
+								<a class="tn-selected-category" href="">Web Geliştirme</a>
+							</li>
+							<li class="list-inline-item">
+								<a class="tn-selected-category" href="">Web Geliştirme</a>
+							</li>
+						</ul>
 					</li>
-					<li class="list-inline-item">
-						<a class="tn-selected-category" href="">Pazarlama</a>
+					<li class="list-inline-item list-items">
+						<a class="tn-selected-category list-items-a" href="">Pazarlama</a>
+						<ul class="list-inline subcategory-list">
+							<li class="list-inline-item">
+								<a class="tn-selected-category" href="">Web Geliştirme</a>
+							</li>
+							<li class="list-inline-item ">
+								<a class="tn-selected-category" href="">Web Geliştirme</a>
+							</li>
+							<li class="list-inline-item ">
+								<a class="tn-selected-category" href="">Web Geliştirme</a>
+							</li>
+							<li class="list-inline-item ">
+								<a class="tn-selected-category" href="">Web Geliştirme</a>
+							</li>
+							<li class="list-inline-item">
+								<a class="tn-selected-category" href="">Web Geliştirme</a>
+							</li>
+						</ul>
 					</li>
-					<li class="list-inline-item">
-						<a class="tn-selected-category" href="">Sağlık ve Fitness</a>
+					<li class="list-inline-item list-items">
+						<a class="tn-selected-category list-items-a" href="">Sağlık ve Fitness</a>
+						<ul class="list-inline subcategory-list">
+							<li class="list-inline-item">
+								<a class="tn-selected-category" href="">Web Geliştirme</a>
+							</li>
+							<li class="list-inline-item ">
+								<a class="tn-selected-category" href="">Web Geliştirme</a>
+							</li>
+							<li class="list-inline-item ">
+								<a class="tn-selected-category" href="">Web Geliştirme</a>
+							</li>
+							<li class="list-inline-item ">
+								<a class="tn-selected-category" href="">Web Geliştirme</a>
+							</li>
+							<li class="list-inline-item">
+								<a class="tn-selected-category" href="">Web Geliştirme</a>
+							</li>
+						</ul>
 					</li>
-					<li class="list-inline-item">
-						<a class="tn-selected-category" href="">Müzik</a>
+					<li class="list-inline-item list-items">
+						<a class="tn-selected-category list-items-a" href="">Müzik</a>
+						<ul class="list-inline subcategory-list">
+							<li class="list-inline-item">
+								<a class="tn-selected-category" href="">Web Geliştirme</a>
+							</li>
+							<li class="list-inline-item ">
+								<a class="tn-selected-category" href="">Web Geliştirme</a>
+							</li>
+							<li class="list-inline-item ">
+								<a class="tn-selected-category" href="">Web Geliştirme</a>
+							</li>
+							<li class="list-inline-item ">
+								<a class="tn-selected-category" href="">Web Geliştirme</a>
+							</li>
+							<li class="list-inline-item">
+								<a class="tn-selected-category" href="">Web Geliştirme</a>
+							</li>
+						</ul>
 					</li>
 
 				</ul>
@@ -103,37 +741,207 @@
 		</div>
 
 		<div class="tn-selected-alt-categories">
-			<div class="container">
+			<div class="my-container">
 				<ul class="list-inline">
 					<li class="list-inline-item">
 						<a class="tn-selected-category" href="">Yazılım Geliştirme</a>
+						<ul class="list-inline subcategory-list">
+							<li class="list-inline-item">
+								<a class="tn-selected-category" href="">Web Geliştirme</a>
+							</li>
+							<li class="list-inline-item ">
+								<a class="tn-selected-category" href="">Web Geliştirme</a>
+							</li>
+							<li class="list-inline-item ">
+								<a class="tn-selected-category" href="">Web Geliştirme</a>
+							</li>
+							<li class="list-inline-item ">
+								<a class="tn-selected-category" href="">Web Geliştirme</a>
+							</li>
+							<li class="list-inline-item">
+								<a class="tn-selected-category" href="">Web Geliştirme</a>
+							</li>
+						</ul>
 					</li>
 					<li class="list-inline-item">
 						<a class="tn-selected-category" href="">İşletme</a>
+						<ul class="list-inline subcategory-list">
+							<li class="list-inline-item">
+								<a class="tn-selected-category" href="">Web Geliştirme</a>
+							</li>
+							<li class="list-inline-item ">
+								<a class="tn-selected-category" href="">Web Geliştirme</a>
+							</li>
+							<li class="list-inline-item ">
+								<a class="tn-selected-category" href="">Web Geliştirme</a>
+							</li>
+							<li class="list-inline-item ">
+								<a class="tn-selected-category" href="">Web Geliştirme</a>
+							</li>
+							<li class="list-inline-item">
+								<a class="tn-selected-category" href="">Web Geliştirme</a>
+							</li>
+						</ul>
 					</li>
 					<li class="list-inline-item">
 						<a class="tn-selected-category" href="">Finans ve Muhasebe</a>
+						<ul class="list-inline subcategory-list">
+							<li class="list-inline-item">
+								<a class="tn-selected-category" href="">Web Geliştirme</a>
+							</li>
+							<li class="list-inline-item ">
+								<a class="tn-selected-category" href="">Web Geliştirme</a>
+							</li>
+							<li class="list-inline-item ">
+								<a class="tn-selected-category" href="">Web Geliştirme</a>
+							</li>
+							<li class="list-inline-item ">
+								<a class="tn-selected-category" href="">Web Geliştirme</a>
+							</li>
+							<li class="list-inline-item">
+								<a class="tn-selected-category" href="">Web Geliştirme</a>
+							</li>
+						</ul>
 					</li>
 					<li class="list-inline-item">
 						<a class="tn-selected-category" href="">BT ve Yazılım</a>
+						<ul class="list-inline subcategory-list">
+							<li class="list-inline-item">
+								<a class="tn-selected-category" href="">Web Geliştirme</a>
+							</li>
+							<li class="list-inline-item ">
+								<a class="tn-selected-category" href="">Web Geliştirme</a>
+							</li>
+							<li class="list-inline-item ">
+								<a class="tn-selected-category" href="">Web Geliştirme</a>
+							</li>
+							<li class="list-inline-item ">
+								<a class="tn-selected-category" href="">Web Geliştirme</a>
+							</li>
+							<li class="list-inline-item">
+								<a class="tn-selected-category" href="">Web Geliştirme</a>
+							</li>
+						</ul>
 					</li>
 					<li class="list-inline-item">
 						<a class="tn-selected-category" href="">Ofiste Verimlilik</a>
+						<ul class="list-inline subcategory-list">
+							<li class="list-inline-item">
+								<a class="tn-selected-category" href="">Web Geliştirme</a>
+							</li>
+							<li class="list-inline-item ">
+								<a class="tn-selected-category" href="">Web Geliştirme</a>
+							</li>
+							<li class="list-inline-item ">
+								<a class="tn-selected-category" href="">Web Geliştirme</a>
+							</li>
+							<li class="list-inline-item ">
+								<a class="tn-selected-category" href="">Web Geliştirme</a>
+							</li>
+							<li class="list-inline-item">
+								<a class="tn-selected-category" href="">Web Geliştirme</a>
+							</li>
+						</ul>
 					</li>
 					<li class="list-inline-item">
 						<a class="tn-selected-category" href="">Kişisel Gelişim</a>
+						<ul class="list-inline subcategory-list">
+							<li class="list-inline-item">
+								<a class="tn-selected-category" href="">Web Geliştirme</a>
+							</li>
+							<li class="list-inline-item ">
+								<a class="tn-selected-category" href="">Web Geliştirme</a>
+							</li>
+							<li class="list-inline-item ">
+								<a class="tn-selected-category" href="">Web Geliştirme</a>
+							</li>
+							<li class="list-inline-item ">
+								<a class="tn-selected-category" href="">Web Geliştirme</a>
+							</li>
+							<li class="list-inline-item">
+								<a class="tn-selected-category" href="">Web Geliştirme</a>
+							</li>
+						</ul>
 					</li>
 					<li class="list-inline-item">
 						<a class="tn-selected-category" href="">Tasarım</a>
+						<ul class="list-inline subcategory-list">
+							<li class="list-inline-item">
+								<a class="tn-selected-category" href="">Web Geliştirme</a>
+							</li>
+							<li class="list-inline-item ">
+								<a class="tn-selected-category" href="">Web Geliştirme</a>
+							</li>
+							<li class="list-inline-item ">
+								<a class="tn-selected-category" href="">Web Geliştirme</a>
+							</li>
+							<li class="list-inline-item ">
+								<a class="tn-selected-category" href="">Web Geliştirme</a>
+							</li>
+							<li class="list-inline-item">
+								<a class="tn-selected-category" href="">Web Geliştirme</a>
+							</li>
+						</ul>
 					</li>
 					<li class="list-inline-item">
 						<a class="tn-selected-category" href="">Pazarlama</a>
+						<ul class="list-inline subcategory-list">
+							<li class="list-inline-item">
+								<a class="tn-selected-category" href="">Web Geliştirme</a>
+							</li>
+							<li class="list-inline-item ">
+								<a class="tn-selected-category" href="">Web Geliştirme</a>
+							</li>
+							<li class="list-inline-item ">
+								<a class="tn-selected-category" href="">Web Geliştirme</a>
+							</li>
+							<li class="list-inline-item ">
+								<a class="tn-selected-category" href="">Web Geliştirme</a>
+							</li>
+							<li class="list-inline-item">
+								<a class="tn-selected-category" href="">Web Geliştirme</a>
+							</li>
+						</ul>
 					</li>
 					<li class="list-inline-item">
 						<a class="tn-selected-category" href="">Sağlık ve Fitness</a>
+						<ul class="list-inline subcategory-list">
+							<li class="list-inline-item">
+								<a class="tn-selected-category" href="">Web Geliştirme</a>
+							</li>
+							<li class="list-inline-item ">
+								<a class="tn-selected-category" href="">Web Geliştirme</a>
+							</li>
+							<li class="list-inline-item ">
+								<a class="tn-selected-category" href="">Web Geliştirme</a>
+							</li>
+							<li class="list-inline-item ">
+								<a class="tn-selected-category" href="">Web Geliştirme</a>
+							</li>
+							<li class="list-inline-item">
+								<a class="tn-selected-category" href="">Web Geliştirme</a>
+							</li>
+						</ul>
 					</li>
 					<li class="list-inline-item">
 						<a class="tn-selected-category" href="">Müzik</a>
+						<ul class="list-inline subcategory-list">
+							<li class="list-inline-item">
+								<a class="tn-selected-category" href="">Web Geliştirme</a>
+							</li>
+							<li class="list-inline-item ">
+								<a class="tn-selected-category" href="">Web Geliştirme</a>
+							</li>
+							<li class="list-inline-item ">
+								<a class="tn-selected-category" href="">Web Geliştirme</a>
+							</li>
+							<li class="list-inline-item ">
+								<a class="tn-selected-category" href="">Web Geliştirme</a>
+							</li>
+							<li class="list-inline-item">
+								<a class="tn-selected-category" href="">Web Geliştirme</a>
+							</li>
+						</ul>
 					</li>
 
 				</ul>
@@ -144,17 +952,19 @@
 
 
 
-	<section class="mp-hero">
+	<section class="mp-hero position-relative">
 		<div class="mp-hero-content">
 
-			<div class="mp-hero-image" style="background-image: url('img/hero2.jpg');"></div>
+			<div class="">
+				<img class="w-100 h-100" src="img/hero2.jpg" alt=""></div>
 
 			<div class="mp-hero-text">
 				<div class="container">
 					<h1>Udemy'nin 10. yılı</h1>
-					<p>Hayatları öğrenim yoluyla iyileştirmeyi kutluyoruz. Kurslar şimdi yalnızca 11,99 $'den başlayan fiyatlarla! İndirim 17 Aralık'ta sona eriyor.</p>
+					<p>Hayatları öğrenim yoluyla iyileştirmeyi kutluyoruz. Kurslar şimdi yalnızca 11,99 $'den başlayan
+						fiyatlarla! İndirim 17 Aralık'ta sona eriyor.</p>
 				</div>
-				
+
 			</div>
 		</div>
 
@@ -163,62 +973,118 @@
 
 
 	<section class="courses-subjects">
-		<div class="container">
+		<div class="my-container">
 			<div class="unit-title">
 				<h2>Sizin için önerilen konular</h2>
 			</div>
 
-			<div class="unit-subjects">
-				<div class="row">
-					<div class="col-md-3">
+			<div class="unit-subjects ">
+				<div class="row m-0 owl-carousel-advice-topic  owl-carousel-style  owl-carousel owl-theme">
+					<div class="item">
 						<a href="#">
 							<button class="unit-subject">Kariyer Geliştirme</button>
 						</a>
 					</div>
-					<div class="col-md-3">
+					<div class="item">
 						<a href="#">
 							<button class="unit-subject">Kariyer Değişikliği</button>
 						</a>
 					</div>
-					<div class="col-md-3">
+					<div class="item">
 						<a href="#">
 							<button class="unit-subject">Kariyer Koçluğu</button>
 						</a>
 					</div>
-					<div class="col-md-3">
+					<div class="item">
 						<a href="#">
 							<button class="unit-subject">İş arama</button>
 						</a>
 					</div>
-
-				</div>
-			</div>
-
-			<div class="unit-subjects">
-				<div class="row">
-					<div class="col-md-3">
+					<div class="item">
 						<a href="#">
 							<button class="unit-subject">CompTIA Network +</button>
 						</a>
 					</div>
-					<div class="col-md-3">
+					<div class="item">
 						<a href="#">
 							<button class="unit-subject">Ağ altyapısı</button>
 						</a>
 					</div>
-					<div class="col-md-3">
+					<div class="item ">
 						<a href="#">
 							<button class="unit-subject">Ağ yönetimi</button>
 						</a>
 					</div>
-					<div class="col-md-3">
+					<div class="item ">
 						<a href="#">
 							<button class="unit-subject">CompTIA A+</button>
 						</a>
 					</div>
 
+					<div class="item ">
+						<a href="#">
+							<button class="unit-subject">CompTIA A+</button>
+						</a>
+					</div>
+
+					<div class="item">
+						<a href="#">
+							<button class="unit-subject">Kariyer Geliştirme</button>
+						</a>
+					</div>
+					<div class="item">
+						<a href="#">
+							<button class="unit-subject">Kariyer Değişikliği</button>
+						</a>
+					</div>
+					<div class="item">
+						<a href="#">
+							<button class="unit-subject">Kariyer Koçluğu</button>
+						</a>
+					</div>
+					<div class="item">
+						<a href="#">
+							<button class="unit-subject">İş arama</button>
+						</a>
+					</div>
+					<div class="item">
+						<a href="#">
+							<button class="unit-subject">CompTIA Network +</button>
+						</a>
+					</div>
+					<div class="item">
+						<a href="#">
+							<button class="unit-subject">Ağ altyapısı</button>
+						</a>
+					</div>
+					<div class="item ">
+						<a href="#">
+							<button class="unit-subject">Ağ yönetimi</button>
+						</a>
+					</div>
+					<div class="item ">
+						<a href="#">
+							<button class="unit-subject">CompTIA A+</button>
+						</a>
+					</div>
+
+					<div class="item ">
+						<a href="#">
+							<button class="unit-subject">CompTIA A+</button>
+						</a>
+					</div>
+
+
+				
+					
+
 				</div>
 			</div>
+
+
+
+
+
 
 		</div>
 	</section>
@@ -227,16 +1093,18 @@
 
 
 	<section class="courses-slide">
-		<div class="container">
+		<div class="my-container">
 			<div class="unit-title">
 				<h2>Sizin için önerilenler</h2>
 			</div>
 
 			<div class="unit-carousel">
-				<div class="row m-0 owl-carousel owl-theme" id="owl-carousel-first">
+				<div class="row m-0 owl-carousel-all owl-carousel-style  owl-carousel owl-theme"
+					id="owl-carousel-first">
 					<div class="item">
 						<div class="course-card-image">
-							<img src="https://img-a.udemycdn.com/course/240x135/2488654_e156_3.jpg?sgOeOKWaurQFKKyoYj5icmnifkNCK19IwyPHSMq5b9d-0W6-ZbsF_s-e49g0tri62MG4x_XTzCx6M0K6x7KxaLwfgJtwDzgmEOc3YGm_JHdJgZVXlwbvmiczskazm9Mf">
+							<img
+								src="https://img-a.udemycdn.com/course/240x135/2488654_e156_3.jpg?sgOeOKWaurQFKKyoYj5icmnifkNCK19IwyPHSMq5b9d-0W6-ZbsF_s-e49g0tri62MG4x_XTzCx6M0K6x7KxaLwfgJtwDzgmEOc3YGm_JHdJgZVXlwbvmiczskazm9Mf">
 						</div>
 
 						<div class="course-card-main">
@@ -269,7 +1137,8 @@
 
 					<div class="item">
 						<div class="course-card-image">
-							<img src="https://img-a.udemycdn.com/course/240x135/2411016_ad7f.jpg?uuk3flpZNFfUKrG3XMY0OliWEgAicDWaIUTtya8Ncd4scYjuKPpSnXsjCB9u9fptK4MaKuPvFhFKzf3At-SdA9LbewPy6U-0DMBjXbPH-vJhiy7J3EA9w-XawpAUZQ">
+							<img
+								src="https://img-a.udemycdn.com/course/240x135/2411016_ad7f.jpg?uuk3flpZNFfUKrG3XMY0OliWEgAicDWaIUTtya8Ncd4scYjuKPpSnXsjCB9u9fptK4MaKuPvFhFKzf3At-SdA9LbewPy6U-0DMBjXbPH-vJhiy7J3EA9w-XawpAUZQ">
 						</div>
 
 						<div class="course-card-main">
@@ -302,7 +1171,8 @@
 
 					<div class="item">
 						<div class="course-card-image">
-							<img src="https://img-b.udemycdn.com/course/240x135/1735948_3b18_3.jpg?secure=6RodiU_ejoeVpR-CSgueMw%3D%3D%2C1606665339">
+							<img
+								src="https://img-b.udemycdn.com/course/240x135/1735948_3b18_3.jpg?secure=6RodiU_ejoeVpR-CSgueMw%3D%3D%2C1606665339">
 						</div>
 
 						<div class="course-card-main">
@@ -336,7 +1206,8 @@
 
 					<div class="item">
 						<div class="course-card-image">
-							<img src="https://img-a.udemycdn.com/course/240x135/3037338_1f6b_9.jpg?gHWMZPc-G3fOrja0ObIhRRsj3LqFtqpa3IJJe-g_nOqoa9QQw9jsMwOy9Fe8YBW-blsqN9Gv8hdhNH848bmHXfdH-x_mScUrITucEDTBs-a8s1RKbWNn_GuGPlxAqj6R">
+							<img
+								src="https://img-a.udemycdn.com/course/240x135/3037338_1f6b_9.jpg?gHWMZPc-G3fOrja0ObIhRRsj3LqFtqpa3IJJe-g_nOqoa9QQw9jsMwOy9Fe8YBW-blsqN9Gv8hdhNH848bmHXfdH-x_mScUrITucEDTBs-a8s1RKbWNn_GuGPlxAqj6R">
 						</div>
 
 						<div class="course-card-main">
@@ -368,58 +1239,61 @@
 					</div>
 
 					<div class="item">
-							<div class="course-card-image">
-								<img src="https://img-a.udemycdn.com/course/240x135/2488654_e156_3.jpg?sgOeOKWaurQFKKyoYj5icmnifkNCK19IwyPHSMq5b9d-0W6-ZbsF_s-e49g0tri62MG4x_XTzCx6M0K6x7KxaLwfgJtwDzgmEOc3YGm_JHdJgZVXlwbvmiczskazm9Mf">
-							</div>
-	
-							<div class="course-card-main">
-	
-								<div class="course-card-title">
-									The Complete 2020 PHP Full Stack Web Developer Bootcamp
-								</div>
-	
-								<div class="course-card-instructor">
-									Srinivas Vanamala
-								</div>
-	
-								<div class="course-card-stars">
-									<span class="course-card-points">4,4</span>
-									<i class="fa fa-star" aria-hidden="true"></i>
-									<i class="fa fa-star" aria-hidden="true"></i>
-									<i class="fa fa-star" aria-hidden="true"></i>
-									<i class="fa fa-star" aria-hidden="true"></i>
-									<i class="fa fa-star" aria-hidden="true"></i>
-									<span class="course-card-students">(3.324)</span>
-								</div>
-	
-								<div class="course-card-price">
-									<h2>10,99 $</h2> <del>129,99 $</del>
-								</div>
-	
-							</div>
-	
+						<div class="course-card-image">
+							<img
+								src="https://img-a.udemycdn.com/course/240x135/2488654_e156_3.jpg?sgOeOKWaurQFKKyoYj5icmnifkNCK19IwyPHSMq5b9d-0W6-ZbsF_s-e49g0tri62MG4x_XTzCx6M0K6x7KxaLwfgJtwDzgmEOc3YGm_JHdJgZVXlwbvmiczskazm9Mf">
 						</div>
-	
 
-				</div>	
+						<div class="course-card-main">
+
+							<div class="course-card-title">
+								The Complete 2020 PHP Full Stack Web Developer Bootcamp
+							</div>
+
+							<div class="course-card-instructor">
+								Srinivas Vanamala
+							</div>
+
+							<div class="course-card-stars">
+								<span class="course-card-points">4,4</span>
+								<i class="fa fa-star" aria-hidden="true"></i>
+								<i class="fa fa-star" aria-hidden="true"></i>
+								<i class="fa fa-star" aria-hidden="true"></i>
+								<i class="fa fa-star" aria-hidden="true"></i>
+								<i class="fa fa-star" aria-hidden="true"></i>
+								<span class="course-card-students">(3.324)</span>
+							</div>
+
+							<div class="course-card-price">
+								<h2>10,99 $</h2> <del>129,99 $</del>
+							</div>
+
+						</div>
+
+					</div>
 
 
-		</div>
+				</div>
+
+
+			</div>
 	</section>
 
 
 
 	<section class="courses-slide">
-		<div class="container">
+		<div class="my-container">
 			<div class="unit-title">
 				<h2>Web Geliştirme Kategorisindeki En Popüler Kurslar</h2>
 			</div>
 
 			<div class="unit-carousel">
-				<div class="row">
-					<div class="col-md-3">
+				<div class="row m-0 owl-carousel-all owl-carousel-style owl-carousel owl-theme"
+					id="owl-carousel-second">
+					<div class="item">
 						<div class="course-card-image">
-							<img src="https://img-a.udemycdn.com/course/240x135/2854294_db11_2.jpg?L2-QfucF_S3Df3FXovQWpINUVBNzFAdyem0_Wsv50mPBA9JNMh7kP0pwDSDHgb1yGm7LEvo-DtkHLgKdrKwSDhOG7a9nDKukW_FhCYo20lFSvRIBdVe4txAgHyvKMdD9">
+							<img
+								src="https://img-a.udemycdn.com/course/240x135/2854294_db11_2.jpg?L2-QfucF_S3Df3FXovQWpINUVBNzFAdyem0_Wsv50mPBA9JNMh7kP0pwDSDHgb1yGm7LEvo-DtkHLgKdrKwSDhOG7a9nDKukW_FhCYo20lFSvRIBdVe4txAgHyvKMdD9">
 						</div>
 
 						<div class="course-card-main">
@@ -450,9 +1324,10 @@
 
 					</div>
 
-					<div class="col-md-3">
+					<div class="item">
 						<div class="course-card-image">
-							<img src="https://img-a.udemycdn.com/course/240x135/851712_fc61_6.jpg?Q-pisAaCh-ME_39Kv8PQAajod5fuTGX-Z-Q8UB7gjUYG1T0AMICh3XdLtkHGmyOCKRD5ugjqdy9K69wdrQ4qEsSEBeNWlplawj4SLDbn5rGEFXdXbERP8upMAZ5fYBI">
+							<img
+								src="https://img-a.udemycdn.com/course/240x135/851712_fc61_6.jpg?Q-pisAaCh-ME_39Kv8PQAajod5fuTGX-Z-Q8UB7gjUYG1T0AMICh3XdLtkHGmyOCKRD5ugjqdy9K69wdrQ4qEsSEBeNWlplawj4SLDbn5rGEFXdXbERP8upMAZ5fYBI">
 						</div>
 
 						<div class="course-card-main">
@@ -483,9 +1358,10 @@
 
 					</div>
 
-					<div class="col-md-3">
+					<div class="item">
 						<div class="course-card-image">
-							<img src="https://img-a.udemycdn.com/course/240x135/705264_caa9_11.jpg?vKusHMUVRkBt_4JlBuDRFLqEuYzx7fu_1WxYujaUCk0B6iQH0m2YS6RDqXhEQlloAD9D4J5JC4s4Bcy6qbA8m-qjDew0Ry_dlXB1wSe-ybkt7zuGwWRgX1bMOKxEATgx">
+							<img
+								src="https://img-a.udemycdn.com/course/240x135/705264_caa9_11.jpg?vKusHMUVRkBt_4JlBuDRFLqEuYzx7fu_1WxYujaUCk0B6iQH0m2YS6RDqXhEQlloAD9D4J5JC4s4Bcy6qbA8m-qjDew0Ry_dlXB1wSe-ybkt7zuGwWRgX1bMOKxEATgx">
 						</div>
 
 						<div class="course-card-main">
@@ -517,9 +1393,10 @@
 					</div>
 
 
-					<div class="col-md-3">
+					<div class="item">
 						<div class="course-card-image">
-							<img src="https://img-b.udemycdn.com/course/240x135/437398_46c3_9.jpg?secure=0ulXMj4c5OlCf04WOEAIkA%3D%3D%2C1606665884">
+							<img
+								src="https://img-b.udemycdn.com/course/240x135/437398_46c3_9.jpg?secure=0ulXMj4c5OlCf04WOEAIkA%3D%3D%2C1606665884">
 						</div>
 
 						<div class="course-card-main">
@@ -550,7 +1427,7 @@
 
 					</div>
 
-				</div>	
+				</div>
 
 			</div>
 
@@ -564,147 +1441,214 @@
 
 
 	<section class="courses-slide">
-		<div class="container">
+		<div class="my-container">
 			<div class="unit-title">
 				<h2>Programlama Dilleri Kategorisindeki En Popüler Kurslar</h2>
 			</div>
 
-			<div class="unit-carousel">
-				<div class="row">
-					<div class="col-md-3">
-						<div class="course-card-image">
-							<img src="https://img-b.udemycdn.com/course/240x135/2776760_f176_4.jpg?secure=76xQ6gXfJ7N4l9favlcepw%3D%3D%2C1606666544">
+			<div class="row m-0 owl-carousel-all owl-carousel-style  owl-carousel owl-theme" id="owl-carousel-third">
+				<div class="item">
+					<div class="course-card-image">
+						<img
+							src="https://img-b.udemycdn.com/course/240x135/2776760_f176_4.jpg?secure=76xQ6gXfJ7N4l9favlcepw%3D%3D%2C1606666544">
+					</div>
+
+					<div class="course-card-main">
+
+						<div class="course-card-title">
+							100 Days of Code - The Complete Python Pro Bootca
 						</div>
 
-						<div class="course-card-main">
+						<div class="course-card-instructor">
+							Dr. Angela Yu
+						</div>
 
-							<div class="course-card-title">
-								100 Days of Code - The Complete Python Pro Bootca
-							</div>
+						<div class="course-card-stars">
+							<span class="course-card-points">4,8</span>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<span class="course-card-students">(2.819)</span>
+						</div>
 
-							<div class="course-card-instructor">
-								Dr. Angela Yu
-							</div>
-
-							<div class="course-card-stars">
-								<span class="course-card-points">4,8</span>
-								<i class="fa fa-star" aria-hidden="true"></i>
-								<i class="fa fa-star" aria-hidden="true"></i>
-								<i class="fa fa-star" aria-hidden="true"></i>
-								<i class="fa fa-star" aria-hidden="true"></i>
-								<i class="fa fa-star" aria-hidden="true"></i>
-								<span class="course-card-students">(2.819)</span>
-							</div>
-
-							<div class="course-card-price">
-								<h2>10,99 $</h2> <del>129,99 $</del>
-							</div>
-
+						<div class="course-card-price">
+							<h2>10,99 $</h2> <del>129,99 $</del>
 						</div>
 
 					</div>
 
-					<div class="col-md-3">
-						<div class="course-card-image">
-							<img src="https://img-a.udemycdn.com/course/240x135/1515408_eae3.jpg?yf0hRNGyPC62gZjWwD2IwqZ0fWztUpJudwoS6H_d35yEG5inqTCdRKuuKr12ofQAblEiiFbuBOUDXS1CGjVsodwMoX0Hy1u3bmwaZvL-PMS6FmgQ9QumhTeKzx-aRg">
+				</div>
+
+				<div class="item">
+					<div class="course-card-image">
+						<img
+							src="https://img-a.udemycdn.com/course/240x135/1515408_eae3.jpg?yf0hRNGyPC62gZjWwD2IwqZ0fWztUpJudwoS6H_d35yEG5inqTCdRKuuKr12ofQAblEiiFbuBOUDXS1CGjVsodwMoX0Hy1u3bmwaZvL-PMS6FmgQ9QumhTeKzx-aRg">
+					</div>
+
+					<div class="course-card-main">
+
+						<div class="course-card-title">
+							Nesne Yönelimli Programlama (C++ ile)
 						</div>
 
-						<div class="course-card-main">
+						<div class="course-card-instructor">
+							Dr. Şadi Evren Şeker
+						</div>
 
-							<div class="course-card-title">
-								Nesne Yönelimli Programlama (C++ ile)
-							</div>
+						<div class="course-card-stars">
+							<span class="course-card-points">4,4</span>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<span class="course-card-students">(524)</span>
+						</div>
 
-							<div class="course-card-instructor">
-								Dr. Şadi Evren Şeker
-							</div>
-
-							<div class="course-card-stars">
-								<span class="course-card-points">4,4</span>
-								<i class="fa fa-star" aria-hidden="true"></i>
-								<i class="fa fa-star" aria-hidden="true"></i>
-								<i class="fa fa-star" aria-hidden="true"></i>
-								<i class="fa fa-star" aria-hidden="true"></i>
-								<i class="fa fa-star" aria-hidden="true"></i>
-								<span class="course-card-students">(524)</span>
-							</div>
-
-							<div class="course-card-price">
-								<h2>10,99 $</h2> <del>109,99 $</del>
-							</div>
-
+						<div class="course-card-price">
+							<h2>10,99 $</h2> <del>109,99 $</del>
 						</div>
 
 					</div>
 
-					<div class="col-md-3">
-						<div class="course-card-image">
-							<img src="https://img-a.udemycdn.com/course/240x135/2635074_a03e_2.jpg?vjofIAfhJuNQbWzVVV11Rp9koYOljFRtnmVkXURv7VSQMI4kepxpT8GvXRdxkBKULBxs9ocrkzOz308CadLY6nbdN1K2MvGTPSpFIQVrL4bog9zlnYiwdETiE4YRUGjc">
+				</div>
+
+				<div class="item">
+					<div class="course-card-image">
+						<img
+							src="https://img-a.udemycdn.com/course/240x135/2635074_a03e_2.jpg?vjofIAfhJuNQbWzVVV11Rp9koYOljFRtnmVkXURv7VSQMI4kepxpT8GvXRdxkBKULBxs9ocrkzOz308CadLY6nbdN1K2MvGTPSpFIQVrL4bog9zlnYiwdETiE4YRUGjc">
+					</div>
+
+					<div class="course-card-main">
+
+						<div class="course-card-title">
+							Tia Portal ile Siemens S7 1200 PLC ,Panel ve WinCC SCADA
 						</div>
 
-						<div class="course-card-main">
+						<div class="course-card-instructor">
+							AKIN KAHRAMAN
+						</div>
 
-							<div class="course-card-title">
-								Tia Portal ile Siemens S7 1200 PLC ,Panel ve WinCC SCADA
-							</div>
+						<div class="course-card-stars">
+							<span class="course-card-points">4,2</span>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<span class="course-card-students">(269)</span>
+						</div>
 
-							<div class="course-card-instructor">
-								AKIN KAHRAMAN
-							</div>
-
-							<div class="course-card-stars">
-								<span class="course-card-points">4,2</span>
-								<i class="fa fa-star" aria-hidden="true"></i>
-								<i class="fa fa-star" aria-hidden="true"></i>
-								<i class="fa fa-star" aria-hidden="true"></i>
-								<i class="fa fa-star" aria-hidden="true"></i>
-								<i class="fa fa-star" aria-hidden="true"></i>
-								<span class="course-card-students">(269)</span>
-							</div>
-
-							<div class="course-card-price">
-								<h2>10,99 $</h2> <del>129,99 $</del>
-							</div>
-
+						<div class="course-card-price">
+							<h2>10,99 $</h2> <del>129,99 $</del>
 						</div>
 
 					</div>
 
+				</div>
 
-					<div class="col-md-3">
-						<div class="course-card-image">
-							<img src="https://img-a.udemycdn.com/course/240x135/567828_67d0.jpg?Z1dSqKejULp6DPTcyqVOsqjJb-9_53RWqawQbriWyUia07X7wmzQUP2i-zPTevYokue06Iv4Nzn3gCYjNb99UVK2Z0QxVrT3h9u38hQJfsPESqMO4KxSX4mKT0AL">
+
+				<div class="item">
+					<div class="course-card-image">
+						<img
+							src="https://img-a.udemycdn.com/course/240x135/567828_67d0.jpg?Z1dSqKejULp6DPTcyqVOsqjJb-9_53RWqawQbriWyUia07X7wmzQUP2i-zPTevYokue06Iv4Nzn3gCYjNb99UVK2Z0QxVrT3h9u38hQJfsPESqMO4KxSX4mKT0AL">
+					</div>
+
+					<div class="course-card-main">
+
+						<div class="course-card-title">
+							2020 Complete Python Bootcamp From Zero to Hero i
 						</div>
 
-						<div class="course-card-main">
+						<div class="course-card-instructor">
+							Jose Portilla
+						</div>
 
-							<div class="course-card-title">
-								2020 Complete Python Bootcamp From Zero to Hero i
-							</div>
+						<div class="course-card-stars">
+							<span class="course-card-points">4,6</span>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<span class="course-card-students">(328.319)</span>
+						</div>
 
-							<div class="course-card-instructor">
-								Jose Portilla
-							</div>
-
-							<div class="course-card-stars">
-								<span class="course-card-points">4,6</span>
-								<i class="fa fa-star" aria-hidden="true"></i>
-								<i class="fa fa-star" aria-hidden="true"></i>
-								<i class="fa fa-star" aria-hidden="true"></i>
-								<i class="fa fa-star" aria-hidden="true"></i>
-								<i class="fa fa-star" aria-hidden="true"></i>
-								<span class="course-card-students">(328.319)</span>
-							</div>
-
-							<div class="course-card-price">
-								<h2>10,99 $</h2> <del>129,99 $</del>
-							</div>
-
+						<div class="course-card-price">
+							<h2>10,99 $</h2> <del>129,99 $</del>
 						</div>
 
 					</div>
 
-				</div>	
+				</div>
+				<div class="item">
+					<div class="course-card-image">
+						<img
+							src="https://img-a.udemycdn.com/course/240x135/567828_67d0.jpg?Z1dSqKejULp6DPTcyqVOsqjJb-9_53RWqawQbriWyUia07X7wmzQUP2i-zPTevYokue06Iv4Nzn3gCYjNb99UVK2Z0QxVrT3h9u38hQJfsPESqMO4KxSX4mKT0AL">
+					</div>
+
+					<div class="course-card-main">
+
+						<div class="course-card-title">
+							2020 Complete Python Bootcamp From Zero to Hero i
+						</div>
+
+						<div class="course-card-instructor">
+							Jose Portilla
+						</div>
+
+						<div class="course-card-stars">
+							<span class="course-card-points">4,6</span>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<span class="course-card-students">(328.319)</span>
+						</div>
+
+						<div class="course-card-price">
+							<h2>10,99 $</h2> <del>129,99 $</del>
+						</div>
+
+					</div>
+
+				</div>
+				<div class="item">
+					<div class="course-card-image">
+						<img
+							src="https://img-b.udemycdn.com/course/240x135/2776760_f176_4.jpg?secure=76xQ6gXfJ7N4l9favlcepw%3D%3D%2C1606666544">
+					</div>
+
+					<div class="course-card-main">
+
+						<div class="course-card-title">
+							100 Days of Code - The Complete Python Pro Bootca
+						</div>
+
+						<div class="course-card-instructor">
+							Dr. Angela Yu
+						</div>
+
+						<div class="course-card-stars">
+							<span class="course-card-points">4,8</span>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<span class="course-card-students">(2.819)</span>
+						</div>
+
+						<div class="course-card-price">
+							<h2>10,99 $</h2> <del>129,99 $</del>
+						</div>
+
+					</div>
+
+				</div>
 
 			</div>
 
@@ -721,10 +1665,10 @@
 
 		<hr>
 
-		<div class="container">
+		<div class="my-container">
 
-			<div class="col-md-12">
-				<div class="row">
+			<div class="col-md-12 p-0">
+				<div class="row m-0">
 					<div class="col-md-3 p-0 footer-link">
 
 						<ul class="list-unstyled">
@@ -785,35 +1729,40 @@
 			</div>
 
 			<div class="col-md-12 p-0 footer-bottom">
-				<div class="row">
+				<div class="row align-items-center m-0">
 
 					<div class="col-md-6 p-0">
 						<img src="https://www.udemy.com/staticx/udemy/images/v6/logo-coral.svg">
 					</div>
 
 					<div class="col-md-6 p-0">
-						<p>© 2020 Udemy, Inc.</p>
+						<p class="m-0">© 2020 Udemy, Inc.</p>
 					</div>
 				</div>
 			</div>
 
-			
+
 		</div>
-	</div>
-</footer>
+		</div>
+	</footer>
 
 
 
 
 
 
-<!-- JS -->
+	<!-- JS -->
 
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-<script src='https://kit.fontawesome.com/a076d05399.js'></script>
-<script src="js/owl.carousel.min.js"></script>
-<script src="js/main.js"></script>
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+		crossorigin="anonymous"></script>
+	<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/main.js"></script>
 
 </body>
+
 </html>
