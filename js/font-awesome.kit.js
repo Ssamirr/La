@@ -6,10 +6,8 @@ window.FontAwesomeKitConfig = {
     "enabled": true
   },
   "baseUrl": "https://ka-f.fontawesome.com",
-  "baseUrlKit": "https://kit.fontawesome.com",
   "detectConflictsUntil": null,
   "iconUploads": {},
-  "id": 9091612,
   "license": "free",
   "method": "css",
   "minify": {
@@ -22,10 +20,10 @@ window.FontAwesomeKitConfig = {
   "v4shim": {
     "enabled": false
   },
-  "version": "5.15.2"
+  "version": "5.15.1"
 };
 ! function(t) {
-  "function" == typeof define && define.amd ? define("kit-loader", t) : t()
+  "function" == typeof define && define.amd ? define(t) : t()
 }((function() {
   "use strict";
 
@@ -49,176 +47,159 @@ window.FontAwesomeKitConfig = {
   function n(t, e) {
     var n = Object.keys(t);
     if (Object.getOwnPropertySymbols) {
-      var r = Object.getOwnPropertySymbols(t);
-      e && (r = r.filter((function(e) {
+      var o = Object.getOwnPropertySymbols(t);
+      e && (o = o.filter((function(e) {
         return Object.getOwnPropertyDescriptor(t, e).enumerable
-      }))), n.push.apply(n, r)
+      }))), n.push.apply(n, o)
     }
     return n
   }
 
-  function r(t) {
-    for (var r = 1; r < arguments.length; r++) {
-      var o = null != arguments[r] ? arguments[r] : {};
-      r % 2 ? n(Object(o), !0).forEach((function(n) {
-        e(t, n, o[n])
-      })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(o)) : n(Object(o)).forEach((function(e) {
-        Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(o, e))
+  function o(t) {
+    for (var o = 1; o < arguments.length; o++) {
+      var r = null != arguments[o] ? arguments[o] : {};
+      o % 2 ? n(Object(r), !0).forEach((function(n) {
+        e(t, n, r[n])
+      })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : n(Object(r)).forEach((function(e) {
+        Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(r, e))
       }))
     }
     return t
   }
 
-  function o(t, e) {
+  function r(t, e) {
     return function(t) {
       if (Array.isArray(t)) return t
     }(t) || function(t, e) {
-      if ("undefined" == typeof Symbol || !(Symbol.iterator in Object(t))) return;
+      if (!(Symbol.iterator in Object(t) || "[object Arguments]" === Object.prototype.toString.call(t))) return;
       var n = [],
-        r = !0,
-        o = !1,
+        o = !0,
+        r = !1,
         i = void 0;
       try {
-        for (var c, a = t[Symbol.iterator](); !(r = (c = a.next()).done) && (n.push(c.value), !e || n.length !== e); r = !0);
+        for (var c, a = t[Symbol.iterator](); !(o = (c = a.next()).done) && (n.push(c.value), !e || n.length !== e); o = !0);
       } catch (t) {
-        o = !0, i = t
+        r = !0, i = t
       } finally {
         try {
-          r || null == a.return || a.return()
+          o || null == a.return || a.return()
         } finally {
-          if (o) throw i
+          if (r) throw i
         }
       }
       return n
-    }(t, e) || function(t, e) {
-      if (!t) return;
-      if ("string" == typeof t) return i(t, e);
-      var n = Object.prototype.toString.call(t).slice(8, -1);
-      "Object" === n && t.constructor && (n = t.constructor.name);
-      if ("Map" === n || "Set" === n) return Array.from(t);
-      if ("Arguments" === n || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return i(t, e)
     }(t, e) || function() {
-      throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")
+      throw new TypeError("Invalid attempt to destructure non-iterable instance")
     }()
   }
 
   function i(t, e) {
-    (null == e || e > t.length) && (e = t.length);
-    for (var n = 0, r = new Array(e); n < e; n++) r[n] = t[n];
-    return r
+    var n = e && e.addOn || "",
+      o = e && e.baseFilename || t.license + n,
+      r = e && e.minify ? ".min" : "",
+      i = e && e.fileSuffix || t.method,
+      c = e && e.subdir || t.method;
+    return t.baseUrl + "/releases/" + ("latest" === t.version ? "latest" : "v".concat(t.version)) + "/" + c + "/" + o + r + "." + i
   }
 
   function c(t, e) {
-    var n = e && e.addOn || "",
-      r = e && e.baseFilename || t.license + n,
-      o = e && e.minify ? ".min" : "",
-      i = e && e.fileSuffix || t.method,
-      c = e && e.subdir || t.method;
-    return t.baseUrl + "/releases/" + ("latest" === t.version ? "latest" : "v".concat(t.version)) + "/" + c + "/" + r + o + "." + i
-  }
-
-  function a(t) {
-    return t.baseUrlKit + "/" + t.token + "/" + t.id + "/kit-upload.css"
-  }
-
-  function u(t, e) {
     var n = e || ["fa"],
-      r = "." + Array.prototype.join.call(n, ",."),
-      o = t.querySelectorAll(r);
-    Array.prototype.forEach.call(o, (function(e) {
+      o = "." + Array.prototype.join.call(n, ",."),
+      r = t.querySelectorAll(o);
+    Array.prototype.forEach.call(r, (function(e) {
       var n = e.getAttribute("title");
       e.setAttribute("aria-hidden", "true");
-      var r = !e.nextElementSibling || !e.nextElementSibling.classList.contains("sr-only");
-      if (n && r) {
-        var o = t.createElement("span");
-        o.innerHTML = n, o.classList.add("sr-only"), e.parentNode.insertBefore(o, e.nextSibling)
+      var o = !e.nextElementSibling || !e.nextElementSibling.classList.contains("sr-only");
+      if (n && o) {
+        var r = t.createElement("span");
+        r.innerHTML = n, r.classList.add("sr-only"), e.parentNode.insertBefore(r, e.nextSibling)
       }
     }))
   }
-  var f, s = function() {},
-    d = "undefined" != typeof global && void 0 !== global.process && "function" == typeof global.process.emit,
-    l = "undefined" == typeof setImmediate ? setTimeout : setImmediate,
-    h = [];
+  var a, u = function() {},
+    f = "undefined" != typeof global && void 0 !== global.process && "function" == typeof global.process.emit,
+    s = "undefined" == typeof setImmediate ? setTimeout : setImmediate,
+    d = [];
 
-  function m() {
-    for (var t = 0; t < h.length; t++) h[t][0](h[t][1]);
-    h = [], f = !1
+  function l() {
+    for (var t = 0; t < d.length; t++) d[t][0](d[t][1]);
+    d = [], a = !1
   }
 
-  function p(t, e) {
-    h.push([t, e]), f || (f = !0, l(m, 0))
+  function h(t, e) {
+    d.push([t, e]), a || (a = !0, s(l, 0))
   }
 
-  function y(t) {
+  function m(t) {
     var e = t.owner,
       n = e._state,
-      r = e._data,
-      o = t[n],
+      o = e._data,
+      r = t[n],
       i = t.then;
-    if ("function" == typeof o) {
+    if ("function" == typeof r) {
       n = "fulfilled";
       try {
-        r = o(r)
+        o = r(o)
       } catch (t) {
-        w(i, t)
+        b(i, t)
       }
     }
-    b(i, r) || ("fulfilled" === n && v(i, r), "rejected" === n && w(i, r))
+    p(i, o) || ("fulfilled" === n && v(i, o), "rejected" === n && b(i, o))
   }
 
-  function b(e, n) {
-    var r;
+  function p(e, n) {
+    var o;
     try {
       if (e === n) throw new TypeError("A promises callback cannot return that same promise.");
       if (n && ("function" == typeof n || "object" === t(n))) {
-        var o = n.then;
-        if ("function" == typeof o) return o.call(n, (function(t) {
-          r || (r = !0, n === t ? g(e, t) : v(e, t))
+        var r = n.then;
+        if ("function" == typeof r) return r.call(n, (function(t) {
+          o || (o = !0, n === t ? y(e, t) : v(e, t))
         }), (function(t) {
-          r || (r = !0, w(e, t))
+          o || (o = !0, b(e, t))
         })), !0
       }
     } catch (t) {
-      return r || w(e, t), !0
+      return o || b(e, t), !0
     }
     return !1
   }
 
   function v(t, e) {
-    t !== e && b(t, e) || g(t, e)
+    t !== e && p(t, e) || y(t, e)
   }
 
-  function g(t, e) {
-    "pending" === t._state && (t._state = "settled", t._data = e, p(S, t))
+  function y(t, e) {
+    "pending" === t._state && (t._state = "settled", t._data = e, h(w, t))
   }
 
-  function w(t, e) {
-    "pending" === t._state && (t._state = "settled", t._data = e, p(O, t))
+  function b(t, e) {
+    "pending" === t._state && (t._state = "settled", t._data = e, h(A, t))
+  }
+
+  function g(t) {
+    t._then = t._then.forEach(m)
+  }
+
+  function w(t) {
+    t._state = "fulfilled", g(t)
   }
 
   function A(t) {
-    t._then = t._then.forEach(y)
-  }
-
-  function S(t) {
-    t._state = "fulfilled", A(t)
+    t._state = "rejected", g(t), !t._handled && f && global.process.emit("unhandledRejection", t._data, t)
   }
 
   function O(t) {
-    t._state = "rejected", A(t), !t._handled && d && global.process.emit("unhandledRejection", t._data, t)
-  }
-
-  function j(t) {
     global.process.emit("rejectionHandled", t)
   }
 
-  function E(t) {
+  function j(t) {
     if ("function" != typeof t) throw new TypeError("Promise resolver " + t + " is not a function");
-    if (this instanceof E == !1) throw new TypeError("Failed to construct 'Promise': Please use the 'new' operator, this object constructor cannot be called as a function.");
+    if (this instanceof j == !1) throw new TypeError("Failed to construct 'Promise': Please use the 'new' operator, this object constructor cannot be called as a function.");
     this._then = [],
       function(t, e) {
         function n(t) {
-          w(e, t)
+          b(e, t)
         }
         try {
           t((function(t) {
@@ -229,8 +210,8 @@ window.FontAwesomeKitConfig = {
         }
       }(t, this)
   }
-  E.prototype = {
-    constructor: E,
+  j.prototype = {
+    constructor: j,
     _state: "pending",
     _then: null,
     _data: void 0,
@@ -238,193 +219,181 @@ window.FontAwesomeKitConfig = {
     then: function(t, e) {
       var n = {
         owner: this,
-        then: new this.constructor(s),
+        then: new this.constructor(u),
         fulfilled: t,
         rejected: e
       };
-      return !e && !t || this._handled || (this._handled = !0, "rejected" === this._state && d && p(j, this)), "fulfilled" === this._state || "rejected" === this._state ? p(y, n) : this._then.push(n), n.then
+      return !e && !t || this._handled || (this._handled = !0, "rejected" === this._state && f && h(O, this)), "fulfilled" === this._state || "rejected" === this._state ? h(m, n) : this._then.push(n), n.then
     },
     catch: function(t) {
       return this.then(null, t)
     }
-  }, E.all = function(t) {
+  }, j.all = function(t) {
     if (!Array.isArray(t)) throw new TypeError("You must pass an array to Promise.all().");
-    return new E((function(e, n) {
-      var r = [],
-        o = 0;
+    return new j((function(e, n) {
+      var o = [],
+        r = 0;
 
       function i(t) {
-        return o++,
+        return r++,
           function(n) {
-            r[t] = n, --o || e(r)
+            o[t] = n, --r || e(o)
           }
       }
-      for (var c, a = 0; a < t.length; a++)(c = t[a]) && "function" == typeof c.then ? c.then(i(a), n) : r[a] = c;
-      o || e(r)
+      for (var c, a = 0; a < t.length; a++)(c = t[a]) && "function" == typeof c.then ? c.then(i(a), n) : o[a] = c;
+      r || e(o)
     }))
-  }, E.race = function(t) {
+  }, j.race = function(t) {
     if (!Array.isArray(t)) throw new TypeError("You must pass an array to Promise.race().");
-    return new E((function(e, n) {
-      for (var r, o = 0; o < t.length; o++)(r = t[o]) && "function" == typeof r.then ? r.then(e, n) : e(r)
+    return new j((function(e, n) {
+      for (var o, r = 0; r < t.length; r++)(o = t[r]) && "function" == typeof o.then ? o.then(e, n) : e(o)
     }))
-  }, E.resolve = function(e) {
-    return e && "object" === t(e) && e.constructor === E ? e : new E((function(t) {
+  }, j.resolve = function(e) {
+    return e && "object" === t(e) && e.constructor === j ? e : new j((function(t) {
       t(e)
     }))
-  }, E.reject = function(t) {
-    return new E((function(e, n) {
+  }, j.reject = function(t) {
+    return new j((function(e, n) {
       n(t)
     }))
   };
-  var _ = "function" == typeof Promise ? Promise : E;
+  var S = "function" == typeof Promise ? Promise : j;
 
-  function P(t, e) {
-    var n = e.fetch,
-      r = e.XMLHttpRequest,
-      o = e.token,
-      i = t;
-    return "URLSearchParams" in window ? (i = new URL(t)).searchParams.set("token", o) : i = i + "?token=" + encodeURIComponent(o), i = i.toString(), new _((function(t, e) {
-      if ("function" == typeof n) n(i, {
+  function E(t, n) {
+    var o = n.fetch,
+      r = n.XMLHttpRequest,
+      i = n.token;
+    return new S((function(n, c) {
+      if ("function" == typeof o) o(t, {
         mode: "cors",
-        cache: "default"
+        cache: "default",
+        headers: new Headers(e({}, "fa-kit-token", i))
       }).then((function(t) {
         if (t.ok) return t.text();
         throw new Error("")
-      })).then((function(e) {
-        t(e)
-      })).catch(e);
+      })).then((function(t) {
+        n(t)
+      })).catch(c);
       else if ("function" == typeof r) {
-        var o = new r;
-        o.addEventListener("loadend", (function() {
-          this.responseText ? t(this.responseText) : e(new Error(""))
+        var a = new r;
+        a.addEventListener("loadend", (function() {
+          this.responseText ? n(this.responseText) : c(new Error(""))
         }));
         ["abort", "error", "timeout"].map((function(t) {
-          o.addEventListener(t, (function() {
-            e(new Error(""))
+          a.addEventListener(t, (function() {
+            c(new Error(""))
           }))
-        })), o.open("GET", i), o.send()
+        })), a.open("GET", t), a.setRequestHeader("fa-kit-token", i), a.send()
       } else {
-        e(new Error(""))
+        c(new Error(""))
       }
     }))
   }
 
-  function C(t, e, n) {
-    var r = t;
-    return [
-      [/(url\("?)\.\.\/\.\.\/\.\./g, function(t, n) {
-        return "".concat(n).concat(e)
-      }],
-      [/(url\("?)\.\.\/webfonts/g, function(t, r) {
-        return "".concat(r).concat(e, "/releases/v").concat(n, "/webfonts")
-      }],
-      [/(url\("?)https:\/\/kit-free([^.])*\.fontawesome\.com/g, function(t, n) {
-        return "".concat(n).concat(e)
-      }]
-    ].forEach((function(t) {
-      var e = o(t, 2),
-        n = e[0],
-        i = e[1];
-      r = r.replace(n, i)
-    })), r
-  }
-
-  function F(t, e) {
+  function _(t, e) {
     var n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : function() {},
-      o = e.document || o,
-      i = u.bind(u, o, ["fa", "fab", "fas", "far", "fal", "fad", "fak"]),
-      f = Object.keys(t.iconUploads || {}).length > 0;
-    t.autoA11y.enabled && n(i);
-    var s = [{
+      r = e.document || r,
+      a = c.bind(c, r, ["fa", "fab", "fas", "far", "fal", "fad", "fak"]);
+    t.autoA11y.enabled && n(a);
+    var u = [{
       id: "fa-main",
       addOn: void 0
     }];
-    t.v4shim.enabled && s.push({
+    t.v4shim.enabled && u.push({
       id: "fa-v4-shims",
       addOn: "-v4-shims"
-    }), t.v4FontFaceShim.enabled && s.push({
+    }), t.v4FontFaceShim.enabled && u.push({
       id: "fa-v4-font-face",
       addOn: "-v4-font-face"
-    }), f && s.push({
-      id: "fa-kit-upload",
-      customCss: !0
     });
-    var d = s.map((function(n) {
-      return new _((function(o, i) {
-        P(n.customCss ? a(t) : c(t, {
+    var f = u.map((function(n) {
+      return new S((function(r, c) {
+        E(i(t, {
           addOn: n.addOn,
           minify: t.minify.enabled
         }), e).then((function(i) {
-          o(U(i, r(r({}, e), {}, {
+          r(P(i, o({}, e, {
             baseUrl: t.baseUrl,
             version: t.version,
-            id: n.id,
-            contentFilter: function(t, e) {
-              return C(t, e.baseUrl, e.version)
-            }
+            id: n.id
           })))
-        })).catch(i)
+        })).catch(c)
       }))
     }));
-    return _.all(d)
+    return S.all(f)
   }
 
-  function U(t, e) {
-    var n = e.contentFilter || function(t, e) {
-        return t
-      },
-      r = document.createElement("style"),
-      o = document.createTextNode(n(t, e));
-    return r.appendChild(o), r.media = "all", e.id && r.setAttribute("id", e.id), e && e.detectingConflicts && e.detectionIgnoreAttr && r.setAttributeNode(document.createAttribute(e.detectionIgnoreAttr)), r
+  function P(t, e) {
+    var n = document.createElement("style"),
+      o = document.createTextNode(function(t, e, n) {
+        var o = t;
+        return [
+          [/(url\("?)\.\.\/\.\.\/\.\./g, function(t, n) {
+            return "".concat(n).concat(e)
+          }],
+          [/(url\("?)\.\.\/webfonts/g, function(t, o) {
+            return "".concat(o).concat(e, "/releases/v").concat(n, "/webfonts")
+          }],
+          [/(url\("?)https:\/\/kit-free([^.])*\.fontawesome\.com/g, function(t, n) {
+            return "".concat(n).concat(e)
+          }]
+        ].forEach((function(t) {
+          var e = r(t, 2),
+            n = e[0],
+            i = e[1];
+          o = o.replace(n, i)
+        })), o
+      }(t, e.baseUrl, e.version));
+    return n.appendChild(o), n.media = "all", e.id && n.setAttribute("id", e.id), e && e.detectingConflicts && e.detectionIgnoreAttr && n.setAttributeNode(document.createAttribute(e.detectionIgnoreAttr)), n
   }
 
-  function k(t, e) {
+  function F(t, e) {
     e.autoA11y = t.autoA11y.enabled, "pro" === t.license && (e.autoFetchSvg = !0, e.fetchSvgFrom = t.baseUrl + "/releases/" + ("latest" === t.version ? "latest" : "v".concat(t.version)) + "/svgs", e.fetchUploadedSvgFrom = t.uploadsUrl);
     var n = [];
-    return t.v4shim.enabled && n.push(new _((function(n, o) {
-      P(c(t, {
+    return t.v4shim.enabled && n.push(new S((function(n, r) {
+      E(i(t, {
         addOn: "-v4-shims",
         minify: t.minify.enabled
       }), e).then((function(t) {
-        n(I(t, r(r({}, e), {}, {
+        n(T(t, o({}, e, {
           id: "fa-v4-shims"
         })))
-      })).catch(o)
-    }))), n.push(new _((function(n, o) {
-      P(c(t, {
+      })).catch(r)
+    }))), n.push(new S((function(n, r) {
+      E(i(t, {
         minify: t.minify.enabled
       }), e).then((function(t) {
-        var o = I(t, r(r({}, e), {}, {
+        var r = T(t, o({}, e, {
           id: "fa-main"
         }));
         n(function(t, e) {
           var n = e && void 0 !== e.autoFetchSvg ? e.autoFetchSvg : void 0,
-            r = e && void 0 !== e.autoA11y ? e.autoA11y : void 0;
-          void 0 !== r && t.setAttribute("data-auto-a11y", r ? "true" : "false");
+            o = e && void 0 !== e.autoA11y ? e.autoA11y : void 0;
+          void 0 !== o && t.setAttribute("data-auto-a11y", o ? "true" : "false");
           n && (t.setAttributeNode(document.createAttribute("data-auto-fetch-svg")), t.setAttribute("data-fetch-svg-from", e.fetchSvgFrom), t.setAttribute("data-fetch-uploaded-svg-from", e.fetchUploadedSvgFrom));
           return t
-        }(o, e))
-      })).catch(o)
-    }))), _.all(n)
+        }(r, e))
+      })).catch(r)
+    }))), S.all(n)
   }
 
-  function I(t, e) {
+  function T(t, e) {
     var n = document.createElement("SCRIPT"),
-      r = document.createTextNode(t);
-    return n.appendChild(r), n.referrerPolicy = "strict-origin", e.id && n.setAttribute("id", e.id), e && e.detectingConflicts && e.detectionIgnoreAttr && n.setAttributeNode(document.createAttribute(e.detectionIgnoreAttr)), n
+      o = document.createTextNode(t);
+    return n.appendChild(o), n.referrerPolicy = "strict-origin", e.id && n.setAttribute("id", e.id), e && e.detectingConflicts && e.detectionIgnoreAttr && n.setAttributeNode(document.createAttribute(e.detectionIgnoreAttr)), n
   }
 
-  function L(t) {
+  function C(t) {
     var e, n = [],
-      r = document,
-      o = r.documentElement.doScroll,
-      i = (o ? /^loaded|^c/ : /^loaded|^i|^c/).test(r.readyState);
-    i || r.addEventListener("DOMContentLoaded", e = function() {
-      for (r.removeEventListener("DOMContentLoaded", e), i = 1; e = n.shift();) e()
+      o = document,
+      r = o.documentElement.doScroll,
+      i = (r ? /^loaded|^c/ : /^loaded|^i|^c/).test(o.readyState);
+    i || o.addEventListener("DOMContentLoaded", e = function() {
+      for (o.removeEventListener("DOMContentLoaded", e), i = 1; e = n.shift();) e()
     }), i ? setTimeout(t, 0) : n.push(t)
   }
 
-  function T(t) {
+  function L(t) {
     "undefined" != typeof MutationObserver && new MutationObserver(t).observe(document, {
       childList: !0,
       subtree: !0
@@ -432,41 +401,37 @@ window.FontAwesomeKitConfig = {
   }
   try {
     if (window.FontAwesomeKitConfig) {
-      var x = window.FontAwesomeKitConfig,
-        M = {
-          detectingConflicts: x.detectConflictsUntil && new Date <= new Date(x.detectConflictsUntil),
+      var k = window.FontAwesomeKitConfig,
+        x = {
+          detectingConflicts: k.detectConflictsUntil && new Date <= new Date(k.detectConflictsUntil),
           detectionIgnoreAttr: "data-fa-detection-ignore",
           fetch: window.fetch,
-          token: x.token,
+          token: k.token,
           XMLHttpRequest: window.XMLHttpRequest,
           document: document
         },
-        D = document.currentScript,
-        N = D ? D.parentElement : document.head;
+        I = document.currentScript,
+        U = I ? I.parentElement : document.head;
       (function() {
         var t = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {},
           e = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
-        return "js" === t.method ? k(t, e) : "css" === t.method ? F(t, e, (function(t) {
-          L(t), T(t)
+        return "js" === t.method ? F(t, e) : "css" === t.method ? _(t, e, (function(t) {
+          C(t), L(t)
         })) : void 0
-      })(x, M).then((function(t) {
+      })(k, x).then((function(t) {
         t.map((function(t) {
-          try {
-            N.insertBefore(t, D ? D.nextSibling : null)
-          } catch (e) {
-            N.appendChild(t)
-          }
-        })), M.detectingConflicts && D && L((function() {
-          D.setAttributeNode(document.createAttribute(M.detectionIgnoreAttr));
+          U.insertBefore(t, I ? I.nextSibling : null)
+        })), x.detectingConflicts && I && C((function() {
+          I.setAttributeNode(document.createAttribute(x.detectionIgnoreAttr));
           var t = function(t, e) {
             var n = document.createElement("script");
-            return e && e.detectionIgnoreAttr && n.setAttributeNode(document.createAttribute(e.detectionIgnoreAttr)), n.src = c(t, {
+            return e && e.detectionIgnoreAttr && n.setAttributeNode(document.createAttribute(e.detectionIgnoreAttr)), n.src = i(t, {
               baseFilename: "conflict-detection",
               fileSuffix: "js",
               subdir: "js",
               minify: t.minify.enabled
             }), n
-          }(x, M);
+          }(k, x);
           document.body.appendChild(t)
         }))
       })).catch((function(t) {
