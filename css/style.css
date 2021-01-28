@@ -442,7 +442,7 @@
         -o-transition: 0.3s all;
         transition: 0.3s all;
         height: 100%;
-        overflow-y: scroll;
+        overflow-y: hidden;
         max-width: 270px;
         -webkit-box-flex:270px;
             -ms-flex:270px;
