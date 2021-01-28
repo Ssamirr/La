@@ -84,6 +84,248 @@
     top: 29% !important;
 }
 
+.tutor-name{
+    color: #0f7c90;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.tutor-lesson{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.tutor-point{
+    color: #c96100;
+    font-size: 13px;
+}
+
+.tutor-students{
+    font-size: 13px;
+}
+
+.tutor-students span{
+    font-weight: bold;
+}
+
+.tutor-course{
+    font-size: 13px;
+}
+
+.tutor-course span{
+    font-weight: bold;
+}
+
+.button-filter, .filter-course{
+    position: relative;
+    font-size: 16px;
+    height: 47px;
+    align-items: center;
+    display: flex;
+    min-width: 98px;
+    padding: 0px 10px;
+    color: #0f7c90;
+    background-color: transparent;
+    border: 1px solid #2896a9;
+    border-radius: 4px;
+}
+
+.button-filter button{
+    border: none;
+    background: white;
+    color: #0f7c90;
+    font-weight: bold;
+}
+
+.filter-course select{
+    background: white;
+    border: none;
+    padding: 0px 10px;
+    height: 100%;
+    width: 100%;
+}
+
+.filter-course{
+    padding: 0px !important;
+}
+
+.count-coursee{
+    color: #73726c;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.left-side-filter-ul li{
+    align-items: center;
+    color: #3c3b37 !important;
+    font-weight: bold;
+    font-size: 19px;
+    padding: 18px 0px;
+    border-top: 1px solid rgba(0, 0, 0, .1);
+}
+
+.left-side-filter-ul li:last-of-type{
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+}
+
+.left-side-filter-ul{
+    padding-right: 40px;
+}
+
+.left-side-filter-ul .for-star{
+    font-size: 10px !important;
+}
+
+.left-side-filter-ul .fa-angle-down-transform{
+    transform: rotate(180deg);
+}
+
+.left-side-filter-ul .fa-angle-down{
+    transition: transform 0.5s ease 0s;
+}
+
+.left-side-filter-list{
+    cursor: pointer;
+}
+
+.left-side-filter{
+    overflow: hidden;
+    transition: 0.5s ease all;
+}
+
+.left-side-filter-none{
+    max-width: 0% !important;
+    flex: 0% !important;
+}
+
+.right-side-courses{
+    padding-bottom: 20px;
+    border-bottom:1px solid rgba(0,0,0,.1)
+}
+
+.right-side-filter-block{
+    padding: 0px !important;
+    max-width: 100% !important;
+    flex: 100% !important;
+}
+
+.right-side-filter{
+    transition: 0.5s ease all;
+}
+
+.right-side-filter .right-side-courses:first-of-type{
+    padding-top: 0px;
+}
+
+.right-side-filter .right-side-courses{
+    padding-top: 20px;
+}
+
+.right-side-filter .right-side-courses:last-of-type{
+    border: none;
+}
+
+.pagination_wrapper{
+    width: 100%;
+    text-align: center;
+}
+
+.pagination_wrapper .pagination_ul{
+    padding-left: 0;
+    margin-top: 20px;
+    border-radius: 4px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.pagination-arrow-list a{
+    color: #0f7c90;
+    background-color: transparent;
+    border: 1px solid #2896a9;
+    border-radius: 50%;
+    padding: 9px;
+    display: flex;
+}
+
+.pagination-arrow-list a i{
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pagination_ul li{
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pagination_ul li a{
+    color: #0f7c90;
+    font-weight: bold;
+}
+
+.active_page a{
+    color: #094c59 !important;
+    border-bottom: 2px solid #094c59;
+}
+
+.right-side-filter .course-card-price{
+    margin-top: 10px;
+}
+
+.exit-icon-left-side-filter{
+    display: none;
+}
+
+.button-filter-mobile{
+    display:none;
+}
+
+.count-coursee-mobile{
+    display:none;
+    height: 50px;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,.08),0 4px 12px rgba(0,0,0,.08);
+    padding:0px 10px;
+}
+
+.count-coursee-mobile span{
+    font-size:16px;
+}
+
+.submit-filter-mobile{
+    display:none;
+    height: 80px;
+    align-items: center;
+    box-shadow: 0 2px 40px rgba(0,0,0,.08),0 4px 12px rgba(0,0,0,.08);
+    padding:16px;
+    position:fixed;
+    bottom:0;
+    width:270px;
+}
+
+.submit-filter{
+    color: white !important;
+    width: 100%;
+    display: flex;
+    background-color: #0f7c90;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    padding: 10px 0px;
+    margin-top: 5px;
+    font-weight: bold !important;
+}
+
+
+
 @media (min-width: 768px){
     .owl-carousel-most-view .owl-nav .owl-prev, .owl-carousel-most-view .owl-nav .owl-next {
         top: calc(50% - 40px) !important;
@@ -109,5 +351,51 @@
 @media (max-width: 1000px){
     .category-namee{
         display: none;
+    }
+    .right-side-filter{
+        max-width: 100%;
+        flex: 100%;
+        padding: 0px !important;
+    }
+    .left-side-filter-ul{
+        padding:10px !important;
+        height: calc(100% - 130px);
+        overflow:scroll;
+    }
+    .left-side-filter{
+        position: fixed;
+        z-index: 1011;
+        top: 0;
+        background: white;
+        box-shadow: 0 2px 4px rgba(0,0,0,.08),0 4px 12px rgba(0,0,0,.08);
+        width: 270px;
+        right: -330px;
+        transition: 0.3s all;
+        height: 100%;
+        overflow-y: scroll;
+        max-width: 270px;
+        flex:270px;
+    }
+    .exit-icon-left-side-filter{
+        position: fixed;
+        top: 17px;
+        right: -45px;
+        transition: 0.3s all;
+        background: white;
+        padding: 12px 15px;
+        border-radius: 50%;
+        display: flex !important;
+    }
+    .button-filter-mobile{
+        display:flex;
+    }
+    .button-filter-desktop{
+        display:none;
+    }
+    .count-coursee-mobile{
+        display:flex;
+    }
+    .submit-filter-mobile{
+    display:flex;
     }
 }

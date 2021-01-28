@@ -36,6 +36,7 @@
 
 
 
+
 /* end of courses-subjects section */
 
 
@@ -105,6 +106,7 @@
 
 .course-card-price{
 	display: flex;
+	align-items: center;
 }
 
 .course-card-price h2{
