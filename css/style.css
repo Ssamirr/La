@@ -138,7 +138,7 @@
     font-weight: bold;
 }
 
-.button-filter, .filter-course{
+.button-filter{
     position: relative;
     font-size: 16px;
     height: 47px;
@@ -156,6 +156,23 @@
     border-radius: 4px;
 }
 
+.filter-course{
+    position: relative;
+    font-size: 16px;
+    height: 47px;
+    -webkit-box-align: center;
+    display: flex;
+    min-width: 98px;
+    padding: 0px 10px;
+    color: #73726c;
+    border-color: #989586;
+    border: 1px solid #989586;
+    border-radius: 4px;
+    appearance: none;
+    width: 100%;
+    min-width: 185px;
+}
+
 .button-filter button{
     border: none;
     background: white;
@@ -169,11 +186,37 @@
     padding: 0px 10px;
     height: 100%;
     width: 100%;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
 }
 
 .filter-course{
     padding: 0px !important;
 }
+
+.select-iconn{
+    width: 40px;
+    pointer-events: none;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    padding: 0px 4px;
+    right: 0;
+    justify-content: center;
+}
+
+.select-iconn svg{
+    color: #73726c;
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+    display: inline-block;
+    flex-shrink: 0;
+}
+
 
 .count-coursee{
     color: #73726c;

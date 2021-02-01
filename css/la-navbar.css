@@ -69,13 +69,13 @@
 	position: relative;
 }
 
-.la-navbar-user-area .la-navbar-profile img{
+.la-navbar-profile img{
 	border-radius: 50%;
 	width: 30px;
 	margin-top: 0;
 }
 
-.la-navbar-user-area .la-navbar-profile{
+.la-navbar-profile{
 	text-align: top;
 	padding-top: 0;
 	height: 100%;
