@@ -128,7 +128,7 @@
 	background: white;
 	padding: 10px 0px;
 	right: -280px;
-	top: -11px;
+	top: 0px;
 	display: none;
 	border-radius: 5px;
 }
@@ -144,7 +144,7 @@
 	background: white;
 	padding: 10px 0px;
 	right: -280px;
-	top: -11px;
+	top: -10px;
 	display: none;
 	border-radius: 5px;
 }
