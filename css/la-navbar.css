@@ -451,6 +451,16 @@
 	display: flex;
 }
 
+.teacher-student{
+	color: #3c3b37;
+}
+
+.active-education-list{
+	font-weight: bold;
+	border-bottom: 2px solid #3c3b37;
+	padding-bottom: 10px;
+}
+
 @media (min-width: 1001px){
 	.for-background-mobile{
 		display: none !important;

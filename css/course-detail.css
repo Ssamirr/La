@@ -74,16 +74,16 @@
    input[type=search]::-webkit-search-decoration {
     -webkit-appearance:none
    }
-   ul,
+   /* ul,
    ol {
     padding-left:2.4rem
-   }
-   li {
+   } */
+   /* li {
     padding-left:.8rem
-   }
-   li+li {
+   } */
+   /* li+li {
     margin-top:.4rem
-   }
+   } */
    p+p,
    p+ul,
    p+ol,

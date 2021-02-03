@@ -173,5 +173,45 @@ $(document).ready(function () {
         })
     }
 
+    document.querySelectorAll('.course-click').forEach(function(e){
+        e.addEventListener('click',function(){
+            if (e.closest('.section--panel--1tqxC').querySelector('span').getAttribute('data-checked')!='checked'){
+                e.closest('.section--panel--1tqxC').querySelector('span').setAttribute('data-checked','checked');
+            }
+            else{
+                e.closest('.section--panel--1tqxC').querySelector('span').setAttribute('data-checked','');
+            }
+            
+        })
+    })
+
+    var all_section_course = document.querySelector('.all-sections-course')
+    if(all_section_course){
+        all_section_course.addEventListener('click',function(){
+            if(all_section_course.querySelector('span').innerHTML!='Tüm bölümleri daralt'){
+                document.querySelectorAll('.section--panel--1tqxC').forEach(function(elem){
+                    elem.querySelector('span').setAttribute('data-checked','checked');
+                })
+                all_section_course.querySelector('span').innerHTML='Tüm bölümleri daralt';
+            }
+            else{
+                document.querySelectorAll('.section--panel--1tqxC').forEach(function(elem){
+                    elem.querySelector('span').setAttribute('data-checked','');
+                })
+                all_section_course.querySelector('span').innerHTML='Tüm bölümleri genişlet';
+            }
+    })
+    }
+    
+
+    document.querySelectorAll('.teacher-or-student').forEach(function(e){
+        e.addEventListener('click',function(){
+            document.querySelectorAll('.teacher-or-student').forEach(function(elem){
+                elem.classList.remove('active-education-list');
+            })
+        e.classList.add('active-education-list')
+        })
+    })
+
 
 });
