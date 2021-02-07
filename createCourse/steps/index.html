@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- =============== HEADER ================ -->
+    <header class="header">
+        <!-- LOGO -->
+        <div class="header__logo">
+            <h2> LA </h2>
+        </div>
+        
+        <!-- STEP COUNTER -->
+        <div class="step__counter">
+            <h4> Step <span class="step__counter--start" id="counter"> 1 </span> of <span class="step__counter--length"> 4 </span> </h4>
+        </div>
+        
+        <!-- EXIT FROM PAGE -->
+        <h4 class="exit"> Exit </h4>
+    </header>
+    <div id="progress" class="progress__bar"></div>
+
+    
+    <!-- =============== FIRST STEP PAGE =============== -->
+    <div class="first__step" id="first__step">
+        <h1 class="step__title"> TITLE </h1>
+        <div class="first__step--carts">
+            <div class="cart first__cart">
+                <i class="far fa-file-video logo"></i>
+                <h3 class="cart__title"> TITLE 1 </h3>
+                <h3 class="cart__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Consequatur, officiis officia 
+                </h3>
+            </div>
+            <div class="cart second__cart">
+                <i class="fas fa-clipboard-list logo"></i>
+                <h3 class="cart__title"> TITLE 2 </h3>
+                <h3 class="cart__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Consequatur, officiis officia
+                </h3>
+            </div>
+        </div>
+        <div class="footer">
+            <button type="button" class="continue" id="next2" disabled> <h3> Continue </h3> </button>
+        </div>
+    </div>
+    
+    <!-- =============== SECOND STEP PAGE =============== -->
+    <div class="second__step" id="second__step">
+        <h1 class="step__title"> TITLE </h1>
+        <p class="step__description"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae, quasi! </p>
+        <div class="input__div">
+            <input type="text" class="input" 
+            id="input" maxlength="60"
+            data-max-chars ="60"/>
+            <span class="input__length" id="input__counter"> 60 </span>
+        </div>
+        <footer class="footer">
+            <button class="previous" id="back1"> <h3> Previous </h3> </button>
+            <button type="button" class="continue" id="next3" disabled> <h3> Continue </h3> </button>
+        </footer>
+    </div>
+    
+    <!-- =============== THIRD STEP PAGE ================= -->
+    <div class="third__step" id="third__step">
+        <h1 class="step__title"> TITLE </h1>
+        <p class="step__description"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae, quasi! </p>
+        <div class="select">
+            <div class="selected__category" id="select__category">
+            <span class="select__element" id="selected__element"> Choose a category </span>
+            <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="categories" id="categories">
+            <div class="select__category"> Category 1 </div>
+            <div class="select__category"> Category 2 </div>
+            <div class="select__category"> Category 3 </div>
+            <div class="select__category"> Category 4 </div>
+            <div class="select__category"> Category 5 </div>
+        </div>
+        </div>
+        <footer class="footer">
+            <button class="previous" id="back2"> <h3> Previous </h3> </button>
+            <button type="button" class="continue" id="next4" disabled> <h3> Continue </h3> </button>
+        </footer>
+    </div>
+    
+    <!-- =============== FOURTH STEP PAGE ================== -->
+    <div class="fourth__step" id="fourth__step">
+        <h1 class="step__title"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, miamo? </h1>
+        <p class="step__description"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae, quasi! </p>
+        <div class="test">
+            
+            <div class="test__variants">
+                <input type="radio" id="radio__input1" class="radio" name="variant">
+                <label class="label" for="radio__input1"> Lorem, ipsum dolor. </label>
+            </div>
+            <div class="test__variants">
+                <input type="radio" id="radio__input2" class="radio" name="variant">
+                <label class="label" for="radio__input2"> Lorem, ipsum dolor. </label>
+            </div>
+            <div class="test__variants">
+                <input type="radio" id="radio__input3" class="radio" name="variant">
+                <label class="label" for="radio__input3"> Lorem, ipsum dolor. </label>
+            </div>
+            
+        </div>
+        <footer class="footer">
+            <button class="previous" id="back3"> <h3> Previous </h3> </button>
+            <button class="continue" id="create__course"> <a href="../created course/index.html" id="link" style="text-decoration: none;color: rgb(4, 72, 99);;"> <h3> Create Course </h3> </a> </button>
+        </footer>
+    </div>
+    <!-- =============== FOOTER ================= -->
+    <!-- <footer class="footer">
+        <h3 class="previous"> Previous </h3>
+        <h3 class="continue"> Continue </h3>
+    </footer> -->
+    
+    <script src="./main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+
+</body>
+</html>
