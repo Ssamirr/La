@@ -1,0 +1,339 @@
+.rt-editor--html-mode *::selection {
+    background: rgba(255, 255, 255, .9);
+    color: #29303b
+}
+
+.rt-editor--html-mode *::-moz-selection {
+    background: rgba(255, 255, 255, .9);
+    color: #29303b
+}
+
+.ProseMirror {
+    position: relative
+}
+
+.ProseMirror {
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    -webkit-font-variant-ligatures: none;
+    font-variant-ligatures: none
+}
+
+.ProseMirror pre {
+    white-space: pre-wrap
+}
+
+.ProseMirror li {
+    position: relative
+}
+
+.ProseMirror-hideselection *::selection {
+    background: 0 0
+}
+
+.ProseMirror-hideselection *::-moz-selection {
+    background: 0 0
+}
+
+.ProseMirror-hideselection {
+    caret-color: transparent
+}
+
+.ProseMirror-selectednode {
+    outline: 2px solid #8cf
+}
+
+li.ProseMirror-selectednode {
+    outline: none
+}
+
+li.ProseMirror-selectednode:after {
+    content: "";
+    position: absolute;
+    left: -32px;
+    right: -2px;
+    top: -2px;
+    bottom: -2px;
+    border: 2px solid #8cf;
+    pointer-events: none
+}
+
+.ProseMirror {
+    background: 0 0;
+    border: 1px solid #8a92a3;
+    overflow: auto;
+    padding: 20px;
+    position: relative
+}
+
+.ProseMirror:after {
+    color: #686f7a;
+    display: none;
+    position: absolute;
+    top: 20px;
+    left: 22px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    line-height: 1.287;
+    pointer-events: none;
+    content: attr(placeholder)!important
+}
+
+.rt-editor--empty .ProseMirror:after {
+    display: block
+}
+
+.ProseMirror-selectednode {
+    outline: 1px solid #76c5d6
+}
+
+.rt-editor--wysiwyg-mode .ProseMirror:focus, .ProseMirror-selected-node:after {
+    border: 1px solid #76c5d6
+}
+
+.has-error .ProseMirror {
+    border-left-color: #ec5252!important;
+    border-bottom-color: #ec5252!important;
+    border-right-color: #ec5252!important
+}
+
+.has-error .rt-menu-bar, .has-error .rt-menu-bar-alert {
+    border-top-color: #ec5252!important;
+    border-left-color: #ec5252!important;
+    border-right-color: #ec5252!important
+}
+
+.reply-styling .ProseMirror {
+    border: 0
+}
+
+.reply-styling .rt-menu-bar, .reply-styling .rt-menu-bar-alert {
+    border: 0
+}
+
+.reply-styling .rt-menu-bar .btn {
+    height: 47px
+}
+
+.rt-editor {
+    background: #fff;
+    font-size: 15px;
+    line-height: 1.43
+}
+
+.rt-editor h1, .rt-editor h2, .rt-editor h3, .rt-editor h4, .rt-editor h5, .rt-editor h6 {
+    font-size: 24px;
+    font-weight: 400;
+    margin: 10.5px 0
+}
+
+.rt-editor blockquote[dir=rtl] {
+    border-left: 0;
+    border-right: 5px solid #e8e9eb
+}
+
+.rt-editor ol, .rt-editor ul {
+    margin: 0 0 16px 24px;
+    padding: 0
+}
+
+.rt-editor ol[dir=rtl], .rt-editor ul[dir=rtl] {
+    margin: 0 24px 16px 0
+}
+
+.rt-editor ol p, .rt-editor ul p {
+    margin: 0
+}
+
+.rt-editor ol ul, .rt-editor ul ul, .rt-editor ul ol, .rt-editor ol ol {
+    margin: 0 0 0 24px;
+    padding: 0
+}
+
+.rt-editor ol ul[dir=rtl], .rt-editor ul ul[dir=rtl], .rt-editor ul ol[dir=rtl], .rt-editor ol ol[dir=rtl] {
+    margin: 0 24px 0 0
+}
+
+.rt-editor ol ol {
+    list-style-type: lower-alpha
+}
+
+.rt-editor ol ol ol {
+    list-style-type: lower-roman
+}
+
+.rt-editor ul {
+    list-style-type: disc
+}
+
+.rt-editor img {
+    cursor: pointer
+}
+
+.rt-editor figure {
+    margin: 0 0 16px
+}
+
+.rt-editor figcaption {
+    font-size: 11px;
+    font-style: italic;
+    margin: 5px 0;
+    text-align: left
+}
+
+.rt-editor *[dir=rtl] {
+    direction: rtl;
+    text-align: right;
+    unicode-bidi: embed
+}
+
+.rt-editor pre {
+    overflow: visible!important
+}
+
+.rt-menu-bar-container {
+    background: #fff;
+    z-index: 1000
+}
+
+.rt-menu-bar-container--affixed {
+    border-bottom: 1px solid #8a92a3
+}
+
+.rt-menu-bar, .rt-menu-bar-alert {
+    border: 1px solid #8a92a3;
+    border-bottom: 0
+}
+
+.rt-menu-bar .btn, .rt-menu-bar .dropdown .dropdown-menu {
+    font-size: 13px
+}
+
+.rt-menu-bar .dropdown .dropdown-menu>li.rt-menu-item-blockquote>a {
+    font-size: 18.75px
+}
+
+.rt-menu-bar .dropdown .dropdown-menu>li.rt-menu-item-heading>a {
+    font-size: 24px;
+    font-weight: 400
+}
+
+.rt-menu-bar .btn, .rt-menu-bar .dropdown .dropdown-menu>li:not(.disabled)>a {
+    color: #29303b
+}
+
+.rt-menu-bar .btn:hover, .rt-menu-bar .dropdown .dropdown-menu>li:not(.disabled)>a:hover {
+    background: #007791;
+    color: #fff
+}
+
+.rt-menu-bar .btn.active, .rt-menu-bar .dropdown .dropdown-menu>li:not(.disabled)>a.active {
+    background: #e8e9eb;
+    color: #29303b
+}
+
+.rt-menu-bar .btn {
+    border-radius: 0;
+    height: 42px;
+    line-height: 1
+}
+
+.rt-menu-bar .form-control-counter {
+    padding: 5px;
+    position: static;
+    min-width: 42px;
+    height: 42px;
+    line-height: 32px
+}
+
+.rt-anchor-tooltip {
+    max-width: none
+}
+
+.rt-image-uploader__progress-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%
+}
+
+.rt-image-uploader__icon {
+    color: #8a92a3;
+    font-size: 120px
+}
+
+.rt-image-uploader--drag-active .rt-image-uploader__icon {
+    color: #007791
+}
+
+.rt-image-uploader__label {
+    color: #007791;
+    cursor: pointer
+}
+
+.rt-image-uploader__label:hover {
+    color: #003845
+}
+
+body.keyboard-navigation-in-use input:focus+.rt-image-uploader__label {
+    outline: 4px auto #007791
+}
+
+.rt-image-editor {
+    display: inline-block;
+    position: relative
+}
+
+.rt-image-editor img {
+    opacity: .5
+}
+
+.rt-image-editor .btn {
+    background: #14171c!important;
+    color: #dedfe0!important
+}
+
+.rt-image-editor__overlay {
+    border: 1px dashed #14171c;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%
+}
+
+.rt-image-editor__resizer-handle {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    bottom: -4px;
+    right: -4px;
+    background: #14171c;
+    cursor: nw-resize
+}
+
+.rt-image-editor__resizer-handle--mobile {
+    width: 16px;
+    height: 16px
+}
+
+.rt-editor--resizing-image {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    caret-color: transparent
+}
+
+.rt-editor--html-mode {
+    background: #14171c;
+    color: #dedfe0
+}
+
+.rt-editor--html-mode .ProseMirror:after {
+    color: #dedfe0
+}
+
+.rt-editor--html-mode p {
+    margin: 0
+}
