@@ -435,7 +435,7 @@
 
 .items-profile-menuu ul li a  {
     font-weight: 400;
-    font-size: 14px;
+    font-size: 15px;
     color: #3c3b37;
 }
 
@@ -526,6 +526,58 @@
 .la-navbar-mobile-login a, .la-navbar-mobile-signup a{
 	color: #0f7c90;
 }
+
+.mobile-sub-menu{
+	position: absolute;
+	z-index: 1011;
+	top: 0;
+	background: white;
+	box-shadow: 0 2px 4px rgba(0,0,0,.08),0 4px 12px rgba(0,0,0,.08);
+	width: 270px;
+	left: 270px;
+	transition: 0.3s all;
+	height: 100%;
+	overflow-y: scroll;
+	visibility: hidden;
+	opacity: 0;
+	max-width: 0;
+	overflow-x: hidden;
+}
+
+.back-mobile-profile-menu{
+	display: flex;
+	align-items: center;
+	font-size: 15px;
+	padding: 16px 20px;
+	background: #fbfbf8;
+	cursor: pointer;
+}
+
+.items-sub-profile-menuu{
+	align-items: start;
+	display: flex;
+}
+
+.items-sub-profile-menuu ul {
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+	margin: 0 !important;
+	margin-top: 8px !important;
+}
+
+.items-sub-profile-menuu ul li {
+    margin-bottom: 0px;
+}
+
+.items-sub-profile-menuu ul li a {
+    font-weight: 400;
+    font-size: 15px;
+	color: #3c3b37;
+	padding: 8px 16px;
+}
+
+
 
 @media (min-width: 1001px){
 	.for-background-mobile{

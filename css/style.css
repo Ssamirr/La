@@ -719,6 +719,25 @@
     text-decoration: none;
 }
 
+.sign-up-instructor-student{
+    border-bottom: 1px solid rgba(0,0,0,.1);
+    padding: 10px 0px 0px 24px;
+}
+
+.sign-up-instructor-student .active-li-a {
+    font-weight: bold;
+    border-bottom: 2px solid #3c3b37;
+}
+
+.sign-up-instructor-student li a {
+    font-size: 16px;
+    display: block;
+}
+
+.sign-up-instructor-student li {
+    margin-right: 15px;
+}
+
 @media (max-width: 1000px){
     .category-namee{
         display: none;
