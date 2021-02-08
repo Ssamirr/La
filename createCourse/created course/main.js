@@ -218,11 +218,11 @@ addFirstAnswer.addEventListener('click', () => {
 });
 
 addSecondAnswer.addEventListener('click', () => {
-    firstParent.appendChild(newAnswer)
+    secondParent.appendChild(newAnswer)
 });
 
-addSecondAnswer.addEventListener('click', () => {
-    firstParent.appendChild(newAnswer)
+addThirdAnswer.addEventListener('click', () => {
+    thirdParent.appendChild(newAnswer)
 });
 
 
@@ -239,7 +239,7 @@ newAnswer.addEventListener('keyup', () => {
 del1.addEventListener('click', (e) => {
     let parent = e.target.parentNode
     parent.removeChild(parent.childNodes[1])
-    del.style.display = 'none'
+    del1.style.display = 'none'
 });
 
 del2.addEventListener('click', (e) => {
