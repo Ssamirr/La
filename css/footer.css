@@ -20,11 +20,12 @@ footer{
 
 .footer-bottom{
 	margin-top: 50px;
+	margin-bottom: 20px;
 }
 
 
 .footer-bottom img{
-	width: 150px;
+	width: 29px;
 }
 
 
@@ -32,4 +33,58 @@ footer{
 	color: #767a7a;
 	font-size: 13px;
 	text-align: right;
+}
+
+.select-option{
+	height: 40px;
+	color: #73726c;
+	border-color: #989586;
+	background: #fff;
+	border-radius: 4px;
+	border: 1px solid #989586;
+	cursor: pointer;
+	display: block;
+	padding: 0 40px 0 12px;
+	min-width: 180px;
+	max-width: 600px;
+	appearance: none;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	padding-left: 36px !important;
+}
+
+.select-down-icon{
+	width: 36px;
+	pointer-events: none;
+	display: flex;
+	align-items: center;
+	position: absolute;
+	top: 0;
+	height: 100%;
+	padding: 0 8px;
+	right: 0;
+	justify-content: center;
+}
+
+.globe-icon-language{
+	width: 36px;
+	position: absolute;
+	pointer-events: none;
+	display: flex;
+	align-items: center;
+	position: absolute;
+	top: 0;
+	height: 100%;
+	padding: 0 8px;
+	left: 0;
+	justify-content: center;
+}
+
+@media (max-width: 767px){
+	.footer-bottom{
+		margin-top: 1rem
+	}
+	.footer-bottom p{
+		text-align: left;
+	}
 }

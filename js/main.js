@@ -139,12 +139,29 @@ $(document).ready(function () {
     })
     }
 
-    document.querySelectorAll('.left-side-filter-list').forEach(function(e){
+    var sign_up_instructor_student = document.querySelector('.sign-up-instructor-student')
+    if(sign_up_instructor_student){
+        sign_up_instructor_student.querySelectorAll('li').forEach(function(e){
         e.addEventListener('click',function(){
+            sign_up_instructor_student.querySelectorAll('li').forEach(function(element){
+                element.classList.remove('active-li-a')
+            })
+            e.classList.add('active-li-a')
+        })
+    })
+    }
+
+    document.querySelectorAll('.left-side-filter-list').forEach(function(e){
+        e.querySelector('.listt').addEventListener('click',function(){
+            console.log('1')
             // e.querySelector('.left-side-filter-input').style.display="block";
             e.querySelector('.left-side-filter-input').style.display = e.querySelector('.left-side-filter-input').style.display === 'none' ? 'block' : 'none';
             e.querySelector('i').classList.toggle("fa-angle-down-transform");
         })
+    })
+
+    document.querySelectorAll('.left-side-filter-input').forEach(function(elem){
+
     })
 
     var button_filter = document.querySelector('.button-filter');
@@ -213,5 +230,46 @@ $(document).ready(function () {
         })
     })
 
+    document.querySelectorAll('.items-profile-menuu').forEach(function(e){
+        e.querySelectorAll('.sub-category-detaill').forEach(function(list){
+            list.addEventListener('click',function(){
+                    list.closest('li').querySelector('.mobile-sub-menu').style.visibility="visible";
+                    list.closest('li').querySelector('.mobile-sub-menu').style.maxWidth="270px";
+                    list.closest('li').querySelector('.mobile-sub-menu').style.opacity="1";
+
+                    list.closest('li').querySelector('.mobile-sub-menu').style.left="0";
+                
+                
+            })
+        })
+    })
+
+    document.querySelectorAll('.back-mobile-profile-menu').forEach(function(e){
+        e.addEventListener('click',function(){
+            document.querySelectorAll('.mobile-sub-menu').forEach(function(list){
+                list.style.visibility="hidden";
+                list.style.opacity="0";
+                list.style.maxWidth="0px";
+                list.style.left="270px";
+
+            })
+        })
+    })
+
+    document.querySelector('.main-section-profile-menuu').querySelector('.sub-category-detaill').addEventListener('click',function(){
+        this.closest('.main-section-profile-menuu').querySelector('.mobile-sub-menu').style.visibility="visible";
+        this.closest('.main-section-profile-menuu').querySelector('.mobile-sub-menu').style.left="0";
+        this.closest('.main-section-profile-menuu').querySelector('.mobile-sub-menu').style.maxWidth="270px";
+        this.closest('.main-section-profile-menuu').querySelector('.mobile-sub-menu').style.opacity="1";
+    })
+
 
 });
+
+
+/*add wishlist */
+
+function addItemWishlist(){
+    const item = "<div class='item mt-2'><a href='course-detail.html' class='row'><div class='course-card-image col-4'><img src='img/la.jpeg'></div><div class='course-card-main col-8'><div class='course-card-title'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, ex!</div></div></a><div class='course-card-instructor'>LA Orujova</div><div class='course-card-price'><h2>10,99 $</h2> <del>129,99 $</del></div><div data-purpose='add-to-cart'><button type='button' class='udlite-btn udlite-btn-medium udlite-btn-secondary udlite-heading-sm add-to-cart' style='width:100%'>Add to cart</button></div></div>";
+    $( ".wishlist-item" ).append( item );
+}

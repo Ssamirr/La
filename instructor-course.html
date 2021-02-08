@@ -41,7 +41,7 @@
                             class="dropdown--open-on-hover dropdown--instructor zero-state dropdown--open-on-hover dropdown">
                             <a data-purpose="instructor-dropdown" href="/" rel=" noopener noreferrer" target="_self"
                                 id="header.instructor" role="button" class="dropdown-toggle" aria-haspopup="true"
-                                aria-expanded="false">Öğrenci</a>
+                                aria-expanded="false">Student</a>
                             <ul role="menu" class="hidden dropdown-menu dropdown-menu-right"
                                 aria-labelledby="header.instructor"></ul>
                         </div>
@@ -53,12 +53,22 @@
                             <div class="la-navbar-notifications">
                                     <i class="far fa-bell" aria-hidden="true"></i>
                                     <div class="notifications-info">
-                                        <div class="d-flex justify-content-between top-notifications-info">
-                                            <span>Bildirimler</span>
-                                            <a href="">Ayarlar</a>
+                                            <div class="d-flex justify-content-between top-notifications-info">
+                                                <span>Notification</span>
+                                                <a href="">Settings</a>
+                                            </div>
+                                            <div style="border-bottom:1px solid rgba(0, 0, 0, .1)" class="teacher-student d-flex">
+                                                <div class="active-education-list teacher-or-student col-6">
+                                                    <span>Instructor</span>
+                                                </div>
+                                                <div class="col-6 teacher-or-student">
+                                                    <span>Student</span>
+                                                </div>
+                    
+                                            </div>
+                    
+                                            <p class="p-0 m-0 bottom-notification-info">No notifications.</p>
                                         </div>
-                                        <p class="p-0 m-0 bottom-notification-info">Bildirim yok.</p>
-                                    </div>
                                 </div>
                             <!-- <ul role="menu" class="dropdown-menu dropdown-menu-right"
                                 aria-labelledby="header.notifications">
@@ -94,94 +104,75 @@
                                     <div class="la-navbar-profile">
                                             <img src="img/profile.jpg">
                                             <div class="profile-info">
-                                                <div class="main-section-profile-info">
-                                                    <div style="width:70px">
-                                                        <img class="h-100 w-100" src="img/profile.jpg">
+                                                    <div class="main-section-profile-info">
+                                                        <div style="width:70px">
+                                                            <img class="h-100 w-100" src="img/profile.jpg">
+                                                        </div>
+                                                        <div class="d-flex flex-column align-items-start name-profile-info">
+                                                            <a href="">Lala Orujova</a>
+                                                            <span>Lalaorujova@gmail.com</span>
+                                                        </div>
                                                     </div>
-                                                    <div class="d-flex flex-column align-items-start name-profile-info">
-                                                        <a href="">Samir Sardarli</a>
-                                                        <span>sardarlisamir@gmail.com</span>
-                                                    </div>
+                            
+                                                    <hr>
+                            
+                                                    <div class="items-profile-info">
+                                                            <ul>
+                                                                <li>
+                                                                    <a href="">My Learning</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="">My cart</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="">Wishlist</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="">Teach on LA</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                            
+                                                    
+                            
+                            
+                                                    <hr>
+                            
+                                                    <div class="section-info-methods-profile-info">
+                                                            <ul>
+                                                                <li>
+                                                                    <a href="">Account settings</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                            
+                                                    <hr>
+                            
+                                                    <div class="section-edit-profile-info">
+                                                            <ul>
+                                                                <li>
+                                                                    <a href="">Public profile</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="">Edit profile</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                            
+                                                    <hr>
+                            
+                                                    <div class="section-exit-profile-info">
+                                                            <ul>
+                                                                <li>
+                                                                    <a href="">Help</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="index-unregister.html">Sign out</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                            
                                                 </div>
-                        
-                                                <hr>
-                        
-                                                <div class="items-profile-info">
-                                                    <ul>
-                                                        <li>
-                                                            <a href="">Öğrenim İçeriğim</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="">Sepetim</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="">Wishlist</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="">Udemy'de Eğitim Verin</a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                        
-                                                <hr>
-                        
-                                                <div class="section-notification-profile-info">
-                                                    <ul>
-                                                        <li>
-                                                            <a href="">Bildirimler</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="">Mesajlar</a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                        
-                                                <hr>
-                        
-                                                <div class="section-info-methods-profile-info">
-                                                    <ul>
-                                                        <li>
-                                                            <a href="">Hesap ayarları</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="">Ödeme yöntemleri</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="">Udemy kredileri</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="">Satın alma geçmişi</a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                        
-                                                <hr>
-                        
-                                                <div class="section-edit-profile-info">
-                                                    <ul>
-                                                        <li>
-                                                            <a href="">Herkese açık profil</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="">Profili düzenle</a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                        
-                                                <hr>
-                        
-                                                <div class="section-exit-profile-info">
-                                                    <ul>
-                                                        <li>
-                                                            <a href="">Yardım</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="">Oturumu kapat</a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                        
-                                            </div>
                         
                                         </div>
                                 <ul role="menu" class="hidden dropdown-menu dropdown-menu-right"
@@ -203,29 +194,29 @@
                                 <div class="nav-container">
                                     <ul class="nav nav-pills nav-stacked">
                                         <li class="side-nav--logo-menu-item--3ODgF"><a href="/instructor"><img
-                                                    alt="Udemy" data-purpose="udemy-brand-logo" class=""
-                                                    src="/staticx/udemy/images/v6/logo-coral-light.svg" width="96"
+                                                    alt="LA" data-purpose="udemy-brand-logo" class=""
+                                                    src="img/laa.jpeg" width="29"
                                                     height="31"></a></li>
                                         <li class="side-nav--nav-button--1zEvP side-nav--active--2qr2l"><a
                                                 data-resource="courses" href="/instructor/courses"><span
                                                     class="side-nav--icon--3_8ka udi udi-course-player"></span><span
-                                                    class="side-nav--title--1Fgkc">Kurslar</span></a></li>
+                                                    class="side-nav--title--1Fgkc">Courses</span></a></li>
                                         <li class="side-nav--nav-button--1zEvP"><a data-resource="communication"
                                                 href="/instructor/communication/qa/"><span
                                                     class="side-nav--icon--3_8ka udi udi-communication-balloon"></span><span
-                                                    class="side-nav--title--1Fgkc">İletişim</span></a></li>
+                                                    class="side-nav--title--1Fgkc">Communacition</span></a></li>
                                         <li class="side-nav--nav-button--1zEvP"><a data-resource="performance"
                                                 href="/instructor/performance/overview"><span
                                                     class="side-nav--icon--3_8ka udi udi-performance-chart"></span><span
-                                                    class="side-nav--title--1Fgkc">Performans</span></a></li>
+                                                    class="side-nav--title--1Fgkc">Performance</span></a></li>
                                         <li class="side-nav--nav-button--1zEvP"><a data-resource="tools"
                                                 href="/instructor/tools"><span
                                                     class="side-nav--icon--3_8ka udi udi-tools"></span><span
-                                                    class="side-nav--title--1Fgkc">Araçlar</span></a></li>
+                                                    class="side-nav--title--1Fgkc">Tools</span></a></li>
                                         <li class="side-nav--nav-button--1zEvP"><a data-resource="help"
                                                 href="/instructor/help"><span
                                                     class="side-nav--icon--3_8ka udi udi-question-line-circle"></span><span
-                                                    class="side-nav--title--1Fgkc">Kaynaklar</span></a></li>
+                                                    class="side-nav--title--1Fgkc">Resources</span></a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -240,12 +231,10 @@
                                             <div class=" instructor-dashboard--create-cta--row--u78AT row">
                                                 <div class="col-md-9 instructor-dashboard--cta-text--1-oQv "><span
                                                         class="text-secondary mr30 instructor-dashboard--create-cta--icon--2Q_g9 udi-large udi udi-instructional-design"></span>
-                                                    <h1 class="instructor-dashboard--cta-title--3kxPD">Kurs Oluşturma
-                                                        Adımına Geç</h1>
+                                                    <h1 class="instructor-dashboard--cta-title--3kxPD">Jump Into Course Creation</h1>
                                                 </div>
                                                 <div class="col-md-3 col-sm-12 "><button type="button"
-                                                        class="instructor-dashboard--cta-button--25xX8 btn btn-lg btn-primary"> <a href="./createCourse/steps/index.html" style="text-decoration: none; color: white;"> Kursunuzu
-                                                        Oluşturun </a></button></div>
+                                                        class="instructor-dashboard--cta-button--25xX8 btn btn-lg btn-primary"> <a href="./createCourse/steps/index.html" style="text-decoration: none; color: white; "> Create Course </a></button></div>
                                             </div>
                                         </div>
                                     </div>
@@ -255,8 +244,7 @@
                                         <div>
                                             <div class="instructor-dashboard--resource-recommendations--mloO1">
                                                 <h2 class="instructor-dashboard--dashboard-resources-title--2bK8N">
-                                                    Deneyimlerinize dayanarak, bu kaynakların yararlı olacağını
-                                                    düşünüyoruz.</h2>
+                                                    Based on your experience, we think these resources will be helpful.</h2>
                                                 <div class="instructor-dashboard--new-instructor-resources--13KnT"
                                                     data-purpose="new-instructor-resources">
                                                     <div
@@ -272,16 +260,13 @@
                                                                 class="col-md-7 p0 instructor-dashboard--resource-description-col--2wfGo ">
                                                                 <div
                                                                     class="h2 instructor-dashboard--resource-title--16nub">
-                                                                    İlgi Çekici Bir Kurs Oluşturun</div>
+                                                                    Create an Engaging Course</div>
                                                                 <p class="instructor-dashboard--resource-text--3objL">
-                                                                    İster yıllardır, ister ilk defa eğitim veriyor olun,
-                                                                    ilgi çekici bir kurs oluşturabilirsiniz. Nereden
-                                                                    başlarsanız başlayın, bir üst seviyeye çıkmanıza
-                                                                    yardımcı olacak kaynakları ve en iyi uygulamaları
-                                                                    sizin için bir araya getirdik.</p><a
+                                                                    Whether you've been teaching for years or are teaching for the first time, you can make an engaging course. We've
+                                                                    compiled resources and best practices to help you get to the next level, no matter where you're starting.</p><a
                                                                     href="/instructor/resources/?page=teaching"
-                                                                    target="_blank" rel="noopener noreferrer">Şimdi
-                                                                    Başla</a>
+                                                                    target="_blank" rel="noopener noreferrer">Get
+                                                                    Started</a>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -302,16 +287,13 @@
                                                                         class="col-md-7 p0 instructor-dashboard--resource-description-col--2wfGo ">
                                                                         <div
                                                                             class="h3 instructor-dashboard--resource-title--16nub">
-                                                                            Bir Video İle Başlayın</div>
+                                                                            Get Started with Video</div>
                                                                         <p
                                                                             class="instructor-dashboard--resource-text--3objL">
-                                                                            Kaliteli video içeriğine sahip dersler,
-                                                                            kursunuzu farklılaştırabilir. Temel
-                                                                            bilgileri öğrenmek için kaynaklarımızı
-                                                                            kullanın.</p><a
+                                                                            Quality video lectures can set your course apart. Use our resources to learn the basics.</p><a
                                                                             href="/instructor/resources/?page=video"
                                                                             target="_blank"
-                                                                            rel="noopener noreferrer">Şimdi Başla</a>
+                                                                            rel="noopener noreferrer">Get Started</a>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -331,14 +313,13 @@
                                                                         class="col-md-7 p0 instructor-dashboard--resource-description-col--2wfGo ">
                                                                         <div
                                                                             class="h3 instructor-dashboard--resource-title--16nub">
-                                                                            Hedef Kitlenizi Oluşturun</div>
+                                                                            Build Your Audience</div>
                                                                         <p
                                                                             class="instructor-dashboard--resource-text--3objL">
-                                                                            Hedef kitlenizi oluşturarak kursunuzu
-                                                                            başarıya hazırlayın.</p><a
+                                                                            Set your course up for success by building your audience.</p><a
                                                                             href="/instructor/resources/?page=audience"
                                                                             target="_blank"
-                                                                            rel="noopener noreferrer">Şimdi Başla</a>
+                                                                            rel="noopener noreferrer">Get Started</a>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -357,16 +338,12 @@
                                                                 class="col-md-7 p0 instructor-dashboard--resource-description-col--2wfGo ">
                                                                 <div
                                                                     class="h3 instructor-dashboard--resource-title--16nub">
-                                                                    Yeni Eğitmen Yarışması'na Katılın!</div>
+                                                                    Join the Newcomer Challenge!</div>
                                                                 <p class="instructor-dashboard--resource-text--3objL">
-                                                                    İlk kursunuzu daha hızlı yayınlamanıza yardımcı
-                                                                    olması için tasarlanan özel ipuçlarından ve
-                                                                    kaynaklardan yararlanın! İlk kursunu zamanında
-                                                                    yayınlayan uygun eğitmenler ödül olarak özel bir
-                                                                    bonus kazanır. Hemen başlayın!</p><a
-                                                                    href="https://email.udemy.com/pub/sf/ResponseForm?_ri_=X0Gzc2X%3DYQpglLjHJlYQGkuaDzeIBzbUH30Hzeq893Rf5uO1Ys4s2lBbUfVXMtX%3DYQpglLjHJlYQGgbmo43gh8qXE8pzepjzcK012zaHKhupzfHzdrA3&amp;_ei_=EnfxfaJKFB7M_9wdA63da-E"
-                                                                    target="_blank" rel="noopener noreferrer">Şimdi
-                                                                    Başla</a>
+                                                                    Get exclusive tips and resources designed to help you launch your first course faster! Eligible instructors who publish
+                                                                    their first course on time will receive a special bonus to celebrate. Start today!</p>
+                                                                    <a href="https://email.udemy.com/pub/sf/ResponseForm?_ri_=X0Gzc2X%3DYQpglLjHJlYQGkuaDzeIBzbUH30Hzeq893Rf5uO1Ys4s2lBbUfVXMtX%3DYQpglLjHJlYQGgbmo43gh8qXE8pzepjzcK012zaHKhupzfHzdrA3&amp;_ei_=EnfxfaJKFB7M_9wdA63da-E"
+                                                                    target="_blank" rel="noopener noreferrer"> Get Started </a>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -375,8 +352,7 @@
                                         </div>
                                     </div>
                                     <div>
-                                        <h2 class="instructor-dashboard--dashboard-resources-title--2bK8N">Sorularınız
-                                            mı var? En popüler eğitmen kaynaklarımıza göz atın</h2>
+                                        <h2 class="instructor-dashboard--dashboard-resources-title--2bK8N">Have questions? Here are our most popular instructor resources.</h2>
                                         <div class="instructor-dashboard--resource-list--hV49F">
                                             <div class=" instructor-dashboard--resource-list--resources--3AFwk row">
                                                 <div
@@ -384,51 +360,44 @@
                                                     <a href="test-video/" target="_blank"
                                                         rel="noopener noreferrer"><span
                                                             class="udi-medium udi udi-video-design"></span>
-                                                        <div class="h4 mb20">Test Videosu</div><small>Bize örnek bir
-                                                            video gönderin ve uzmanlardan geri bildirim alın.</small>
+                                                        <div class="h4 mb20">Test video</div><small>Send us a sample video and get expert feedback.</small>
                                                     </a></div>
                                                 <div
                                                     class="col-xs-6 col-sm-4 col-md-2 instructor-dashboard--resource-col--kqmwT ">
                                                     <a href="https://community.udemy.com" target="_blank"
                                                         rel="noopener noreferrer"><span
                                                             class="udi-medium udi udi-social-media-marketing"></span>
-                                                        <div class="h4 mb20">Udemy Topluluğu</div><small>Deneyimli
-                                                            eğitmenlerden öneriler alın veya cevaplara göz atın.</small>
+                                                        <div class="h4 mb20">LA community</div><small>Ask experienced instructors for advice, or browse answers.</small>
                                                     </a></div>
                                                 <div
                                                     class="col-xs-6 col-sm-4 col-md-2 instructor-dashboard--resource-col--kqmwT ">
                                                     <a href="https://teach.udemy.com/home/?lang=tr" target="_blank"
                                                         rel="noopener noreferrer"><span
                                                             class="udi-medium udi udi-teaching-tools"></span>
-                                                        <div class="h4 mb20">Teaching Center</div><small>Udemy'de eğitim
-                                                            vermeyle ilgili en iyi uygulamaları öğrenin.</small>
+                                                        <div class="h4 mb20">Teaching Center</div><small>Learn about best practices for teaching on Udemy.</small>
                                                     </a></div>
                                                 <div
                                                     class="col-xs-6 col-sm-4 col-md-2 instructor-dashboard--resource-col--kqmwT ">
                                                     <a href="https://www.udemy.com/collection/udemy-insights-courses/all-courses/"
                                                         target="_blank" rel="noopener noreferrer"><span
                                                             class="udi-medium udi udi-teacher-training"></span>
-                                                        <div class="h4 mb20">İçgörü Kursları</div><small>Udemy
-                                                            eğitmenlerine yönelik video kurslardan yararlanın.</small>
+                                                        <div class="h4 mb20">Insight Courses</div><small>Get guided by video courses for Udemy instructors.</small>
                                                     </a></div>
                                                 <div
                                                     class="col-xs-6 col-sm-4 col-md-2 instructor-dashboard--resource-col--kqmwT ">
                                                     <a href="https://www.udemy.com/support/" target="_blank"
                                                         rel="noopener noreferrer"><span
                                                             class="udi-medium udi udi-happiness"></span>
-                                                        <div class="h4 mb20">Yardım ve Destek</div><small>Yardım
-                                                            Merkezimizi ziyaret edin veya destek ekibimizle iletişim
-                                                            kurun.</small>
+                                                        <div class="h4 mb20">Help and Support</div><small>Browse our Help Center or contact our support team.</small>
                                                     </a></div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="instructor-dashboard--cta-footer-wrap--1SG2S">
                                         <div class="text-center">
-                                            <h2 class="instructor-dashboard--cta-title--3kxPD">Başlamaya Hazır Mısınız?
-                                            </h2><a href="https://www.udemy.com/course/create/"><button type="button"
-                                                    class="instructor-dashboard--cta-button--25xX8 btn btn-lg btn-primary">Kursunuzu
-                                                    Oluşturun</button></a>
+                                            <h2 class="instructor-dashboard--cta-title--3kxPD">Are you ready to begin
+                                            </h2><a href="./createCourse/steps/index.html"><button type="button"
+                                                    class="instructor-dashboard--cta-button--25xX8 btn btn-lg btn-primary">create your course</button></a>
                                         </div>
                                     </div>
                                 </div>
@@ -464,19 +433,19 @@
 
                         <ul class="list-unstyled">
                             <li>
-                                <a href="#">Udemy for Business</a>
+                                <a href="#">LA for Business</a>
                             </li>
                             <li>
-                                <a href="#">Udemy'de Öğret</a>
+                                <a href="#">teach on LA</a>
                             </li>
                             <li>
-                                <a href="#">Uygulamayı edinin</a>
+                                <a href="#"> get the app </a>
                             </li>
                             <li>
-                                <a href="#">Hakkımızda</a>
+                                <a href="#">about us</a>
                             </li>
                             <li>
-                                <a href="#">İletişim</a>
+                                <a href="#">communication</a>
                             </li>
                         </ul>
                     </div>
@@ -484,16 +453,16 @@
                     <div class="col-md-3 p-0 footer-link">
                         <ul class="list-unstyled">
                             <li>
-                                <a href="#">Kariyer</a>
+                                <a href="#">career</a>
                             </li>
                             <li>
                                 <a href="#">Blog</a>
                             </li>
                             <li>
-                                <a href="#">Yardım ve Destek</a>
+                                <a href="#">help ve Destek</a>
                             </li>
                             <li>
-                                <a href="#">Ortak</a>
+                                <a href="#">affliate</a>
                             </li>
                         </ul>
                     </div>
@@ -502,16 +471,16 @@
 
                         <ul class="list-unstyled">
                             <li>
-                                <a href="#">Koşullar</a>
+                                <a href="#">terms</a>
                             </li>
                             <li>
-                                <a href="#">Gizlilik politikası ve tanımlama bilgileri politikası</a>
+                                <a href="#">Privacy Policy</a>
                             </li>
                             <li>
-                                <a href="#">Site haritası</a>
+                                <a href="#">Site map</a>
                             </li>
                             <li>
-                                <a href="#">Öne çıkan kurslar</a>
+                                <a href="#">Featured courses</a>
                             </li>
                         </ul>
                     </div>

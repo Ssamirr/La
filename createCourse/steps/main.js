@@ -38,6 +38,7 @@ next3.addEventListener('click', (e) => {
     thirdStep.style.display = 'block'
     back2.style.display = 'block'
     console.log(e)
+    
 })
 
 next4.addEventListener('click', (e) => {
@@ -126,25 +127,19 @@ input.addEventListener('keyup', (e) => {
 
 /////////////////// THIRD STEP PAGE /////////////////
 
-const selectCategory = document.querySelector('#select__category')
+const selectCategory = document.querySelector('.form-select')
 const selectedElement = document.querySelector('#selected__element')
-const categoryLabel = document.querySelector('#categories')
+
 const categories = document.querySelectorAll('.select__category')
 
 selectCategory.addEventListener('click', () => {
-    categoryLabel.style.display = 'block'
-})
-
-for (const element of categories) {
-    element.addEventListener('click', (e) => {
-        next4.disabled = false
+    
+    next4.disabled = false
         next4.style.backgroundColor = '#ec5252'
         next4.style.color = 'white'
-        selectedElement.innerText = e.target.innerText
-        categoryLabel.style.display = 'none'
+})
 
-    })
-}
+
 
 
 /////////////////// FOURTH STEP PAGE /////////////////

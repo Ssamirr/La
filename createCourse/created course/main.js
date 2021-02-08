@@ -335,6 +335,8 @@ congratulationMessage.addEventListener('keyup', (e) => {
 /////////////////////////////////// SETTINGS PAGE ////////////////////////////
 
 document.querySelector('.fa-cog').addEventListener('click', () => {
-    document.querySelector('.content-page').style.display = 'none'
+    for (let docc of document.querySelectorAll('.content-page')) {
+        docc.style.display = 'none'
+    }
     document.querySelector('.settings').style.display = 'block'
 })
