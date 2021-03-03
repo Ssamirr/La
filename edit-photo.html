@@ -1645,16 +1645,6 @@
                                     Account
                                 </a>
                             </li>
-                            <li class="">
-                                <a href="privacy-profile.html" data-purpose="user_manage:edit-privacy">
-                                    Privacy
-                                </a>
-                            </li>
-                            <li class="">
-                                <a href="close-account.html" data-purpose="user_manage:close-account">
-                                    Close account
-                                </a>
-                            </li>
                         </ul>
                     </div>
 					<div class="form-wrapper">
@@ -1665,13 +1655,18 @@
                         Add a nice photo of yourself for your profile.
                         </h3>
                         
-                        <form action="https://www.udemy.com/user/edit-photo/" method="post"> <input type="hidden" name="csrfmiddlewaretoken" value="sa6eo6UQ0IYZU2prBGoTjdtxXBoMQNbSzRI7MnPnvkEIfND0NZxMPiGzGQQGEnQR"> <div class="manage-fields-wrapper"> <div class="form-field-container  labeled form-section" id="form-item-image_file"> <label class="control-label " for="id_image_file">Image preview</label> <div id="tooltip-reference-image_file" class="tooltip-reference pos-r "> <div> <div class="ud-app-loader ud-component--versioned-image-upload-with-preview--app mt20 mb30 ud-app-loaded" data-module-id="versioned-image-upload-with-preview" data-module-args="{&quot;awsKey&quot;:&quot;AKIAIOTLFW3HMG563JEA&quot;,&quot;uploadLabel&quot;:&quot;Upload image&quot;,&quot;allowedImageExtensions&quot;:&quot;.gif,.jpg,.jpeg,.png&quot;,&quot;tips&quot;:null,&quot;minHeight&quot;:200,&quot;fieldPurpose&quot;:&quot;Add / Change Image&quot;,&quot;fieldName&quot;:&quot;image_file&quot;,&quot;minWidth&quot;:200,&quot;imageUrl&quot;:&quot;https://img-a.udemycdn.com/user/200_H/anonymous_3.png?OBR54p13weE_g_8LH7LY-pRNlzQUyE00nj9MqqKBRajMzkeQ_YZoeDfybJQOyi4PFxsZKhAhnhfNj8czBTPJp1IfdCr2JtX8YkopjzmeKFK2vbozvtB6u6I&quot;,&quot;aspect&quot;:1}"><div class=""><div class="image-upload-preview-with-crop--previewWrapper--1eYsy"><div class="image-upload-preview-with-crop--imageWrapper--fNINE"><img data-purpose="image-preview" alt="Course image" class="" src="https://img-a.udemycdn.com/user/200_H/anonymous_3.png?OBR54p13weE_g_8LH7LY-pRNlzQUyE00nj9MqqKBRajMzkeQ_YZoeDfybJQOyi4PFxsZKhAhnhfNj8czBTPJp1IfdCr2JtX8YkopjzmeKFK2vbozvtB6u6I"></div><div class="image-upload-preview-with-crop--tips--17Lj2"></div></div><div class="image-upload-preview-with-crop--form-element--2Nnsf"><div><label>Add / Change Image:</label></div><div class="file-uploader--file-selector--SGCns" data-purpose=""><label for="FileUploaderS3-0--1"><span class="input-group"><input readonly="" type="text" class="form-control" value="No file selected"><span class="input-group-btn"><button type="button" class="btn btn-default">Upload image</button></span></span></label><input accept=".gif,.jpg,.jpeg,.png" type="file" id="FileUploaderS3-0--1" class=""></div><input type="hidden" name="image_file" value=""></div></div></div>
+                        <form action="" method="post" id="LA_update_profile_image">
+						 <input type="hidden" name="csrfmiddlewaretoken" value="sa6eo6UQ0IYZU2prBGoTjdtxXBoMQNbSzRI7MnPnvkEIfND0NZxMPiGzGQQGEnQR"> <div class="manage-fields-wrapper"> 
+						 <div class="form-field-container  labeled form-section" id="form-item-image_file"> <label class="control-label " for="id_image_file">Image preview</label> <div id="tooltip-reference-image_file" class="tooltip-reference pos-r "> <div> <div class="ud-app-loader ud-component--versioned-image-upload-with-preview--app mt20 mb30 ud-app-loaded" data-module-id="versioned-image-upload-with-preview" data-module-args="{&quot;awsKey&quot;:&quot;AKIAIOTLFW3HMG563JEA&quot;,&quot;uploadLabel&quot;:&quot;Upload image&quot;,&quot;allowedImageExtensions&quot;:&quot;.gif,.jpg,.jpeg,.png&quot;,&quot;tips&quot;:null,&quot;minHeight&quot;:200,&quot;fieldPurpose&quot;:&quot;Add / Change Image&quot;,&quot;fieldName&quot;:&quot;image_file&quot;,&quot;minWidth&quot;:200,&quot;imageUrl&quot;:&quot;https://img-a.udemycdn.com/user/200_H/anonymous_3.png?OBR54p13weE_g_8LH7LY-pRNlzQUyE00nj9MqqKBRajMzkeQ_YZoeDfybJQOyi4PFxsZKhAhnhfNj8czBTPJp1IfdCr2JtX8YkopjzmeKFK2vbozvtB6u6I&quot;,&quot;aspect&quot;:1}"><div class=""><div class="image-upload-preview-with-crop--previewWrapper--1eYsy"><div class="image-upload-preview-with-crop--imageWrapper--fNINE"><img data-purpose="image-preview" alt="Course image" class="" src="https://img-a.udemycdn.com/user/200_H/anonymous_3.png?OBR54p13weE_g_8LH7LY-pRNlzQUyE00nj9MqqKBRajMzkeQ_YZoeDfybJQOyi4PFxsZKhAhnhfNj8czBTPJp1IfdCr2JtX8YkopjzmeKFK2vbozvtB6u6I"></div><div class="image-upload-preview-with-crop--tips--17Lj2"></div></div><div class="image-upload-preview-with-crop--form-element--2Nnsf"><div><label>Add / Change Image:</label></div><div class="file-uploader--file-selector--SGCns" data-purpose=""><label for="FileUploaderS3-0--1"><span class="input-group">
+						 <input readonly="" type="text" name="LA_image_update" class="form-control" value="No file selected"><span class="input-group-btn"><button type="button" class="btn btn-default">Upload image</button></span></span></label><input accept=".gif,.jpg,.jpeg,.png" type="file" id="FileUploaderS3-0--1" class=""></div><input type="hidden" name="image_file" value=""></div></div></div>
                         </div> </div>
                         </div>
                         </div>
-                        <div class="form-actions"> <div class="submit-row"> <input type="submit" name="submit" value="Save" class="btn btn-primary " id="submit-id-submit">
+                        <div class="form-actions"> <div class="submit-row"> 
+						<input type="submit" name="submit" value="Save" class="btn btn-primary " id="submit-id-submit">
                         </div>
-                        </div> </form>
+                        </div>
+						</form>
                         </div>
 				</div>
 			</div>
@@ -2244,12 +2239,49 @@
 	<!-- JS -->
 
 
-	<script src="js/jquery.3.5.1.slim.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src='js/font-awesome.kit.js'></script>
 	<script src="js/owl.carousel.min.js"></script>
 	<script src="js/main.js"></script>
-
+	<script>
+	$("#LA_update_profile_image").submit(function(e) {
+            e.preventDefault();
+            if (id >= 0 ){
+				let url = "http://64.225.98.172/api/account/student/"+id+"/";
+				$.ajax({
+						type: "POST",
+						url: url,
+						data: {
+							'avatar':$("input[name=LA_image_update]").val(),
+							'csrfmiddlewaretoken':$("input[name=csrfmiddlewaretoken]").val()
+						}, // serializes the form's elements.
+						success: function(data){
+							console.log('okey'); // show response from the php script.
+						},
+						error: function (data) {
+							url = "http://64.225.98.172/api/account/teacher/"+id+"/";
+							$.ajax({
+									type: "POST",
+									url: url,
+									data: {
+										'avatar':$("input[name=LA_image_update]").val(),
+										'csrfmiddlewaretoken':$("input[name=csrfmiddlewaretoken]").val()
+									}, // serializes the form's elements.
+									success: function(data){
+										console.log('okey'); // show response from the php script.
+									},
+									error: function (data) {
+										console.log(data);
+									},
+							});
+						},
+				});
+			}
+			
+        });
+	
+	</script>
 </body>
 
 </html>

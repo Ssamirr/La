@@ -20,7 +20,6 @@
     <link rel="stylesheet" type="text/css" href="css/entry-main.css">
 
 
-
     <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
 
     <title>Course</title>
@@ -1645,16 +1644,6 @@
                                     Account
                                 </a>
                             </li>
-                            <li class="">
-                                <a href="privacy-profile.html" data-purpose="user_manage:edit-privacy">
-                                    Privacy
-                                </a>
-                            </li>
-                            <li class="">
-                                <a href="close-account.html" data-purpose="user_manage:close-account">
-                                    Close account
-                                </a>
-                            </li>
                         </ul>
                     </div>
                     <div class="form-wrapper">
@@ -1664,7 +1653,7 @@
                         <h3 class="mx-auto">
                             Edit your account settings and change your password here.
                         </h3>
-                        <form method="post" action="https://www.udemy.com/user/edit-account/">
+                        <form method="post" class="LA_account_password_form">
                             <div class="manage-fields-wrapper sectioned">
                                 <div class="form-section" id="form-item-email">
                                     <label>Email:</label>
@@ -2292,12 +2281,39 @@
     <!-- JS -->
 
 
-    <script src="js/jquery.3.5.1.slim.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src='js/font-awesome.kit.js'></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
+	<script>
+		// update form
+        $(".LA_account_password_form").submit(function(e) {
+            e.preventDefault();
+            let url = "http://64.225.98.172/api/account/auth/users/set_password/";
+			if ($("input[name=confirm_new_password]").val() == $("input[name=new_password]").val()){
+				$.ajax({
+					type: "POST",
+					url: url,
+					data: {
+						'new_password':$("input[name=new_password]").val(),
+						'current_password':$("input[name=current_password]").val(),
+						'csrfmiddlewaretoken':$("input[name=csrfmiddlewaretoken]").val()
+					}, // serializes the form's elements.
+					success: function(data){
+						console.log('okey'); // show response from the php script.
+					},
+					error: function (data) {
+						console.log(data);
+					},
+				});
+			}
+			else{
+				alert ("passwordlar uyğun gəlmir");
+			}
 
+        });
+	</script>
 </body>
 
 </html>
