@@ -485,6 +485,7 @@ $(document).ready(function () {
 
 document.querySelectorAll('.sign-outt').forEach(function(e){
     e.addEventListener('click',function(){
+        event.preventDefault()
         localStorage.removeItem('token');
         window.location = 'index-unregister.html';
     })
@@ -494,10 +495,12 @@ document.querySelectorAll('.sign-outt').forEach(function(e){
     document.querySelectorAll('.main-unregister').forEach(function(e){
         e.addEventListener('click',function(){
             if(localStorage.getItem('token')){
+                event.preventDefault()
                 window.location = 'index.html';
             }
             else{
                 window.location = 'index-unregister.html';
+                event.preventDefault()
             }
         })
     })
