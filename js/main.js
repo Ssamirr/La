@@ -1,4 +1,4 @@
-$(document).ready(function () {
+$(document).ready(function() {
 
     $.ajax({
         url: `http://64.225.98.172/api/course/categories/`,
@@ -383,7 +383,7 @@ $(document).ready(function () {
     document.querySelectorAll('.left-side-filter-list').forEach(function (e) {
         e.querySelector('.listt').addEventListener('click', function () {
             console.log('1')
-            // e.querySelector('.left-side-filter-input').style.display="block";
+                // e.querySelector('.left-side-filter-input').style.display="block";
             e.querySelector('.left-side-filter-input').style.display = e.querySelector('.left-side-filter-input').style.display === 'none' ? 'block' : 'none';
             e.querySelector('i').classList.toggle("fa-angle-down-transform");
         })
@@ -535,3 +535,17 @@ function addtocard(e) {
     const item = "<div class='item mt-2'><a href='course-detail.html' class='row'><div class='course-card-image col-4'><img src='img/la.jpeg'></div><div class='course-card-main col-8'><div class='course-card-title'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, ex!</div></div></a><div class='course-card-instructor'>LA Orujova</div><div class='course-card-price'><h2>10,99 $</h2> <del>129,99 $</del></div><div data-purpose='add-to-cart'><button type='button' class='udlite-btn udlite-btn-medium udlite-btn-secondary udlite-heading-sm add-to-cart' style='width:100%'>Add to cart</button></div></div>";
     $(".wishlist-item").append(item);
 }
+
+function addtocard(e) {
+    const item = "<div class='item mt-2'><a href='course-detail.html' class='row'><div class='course-card-image col-4'><img src='img/la.jpeg'></div><div class='course-card-main col-8'><div class='course-card-title'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, ex!</div></div></a><div class='course-card-instructor'>LA Orujova</div><div class='course-card-price'><h2>10,99 $</h2> <del>129,99 $</del></div><div data-purpose='add-to-cart'><button type='button' class='udlite-btn udlite-btn-medium udlite-btn-secondary udlite-heading-sm add-to-cart' style='width:100%'>Add to cart</button></div></div>";
+    $(".wishlist-item").append(item);
+}
+$.ajax({
+    url: "http://64.225.98.172/api/account/auth/users/me/",
+    type: "GET",
+    }).done(function(data) {
+        console.log(data);
+        var id = data.id;
+    }).fail(function() {
+        console.log("error");
+    });
