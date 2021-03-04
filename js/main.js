@@ -201,6 +201,24 @@ $(document).ready(function () {
         }
     })
 
+    if (localStorage.getItem('token')) {
+        let token = {
+            'Authorization': `Bearer ${localStorage.getItem('token')}`
+        }
+        $.ajax({
+            url: "http://64.225.98.172/api/account/auth/users/me/",
+            method: 'GET',
+            headers: token,
+            success: function (response) {
+                console.log(response);
+            },
+            error: function (error_response) {
+                console.log(error_response)
+            }
+        })
+    }
+
+
     document.querySelectorAll('.owl-carousel-all').forEach(function (element) {
         $(element).owlCarousel({
             loop: false,
@@ -483,8 +501,8 @@ $(document).ready(function () {
 });
 
 
-document.querySelectorAll('.sign-outt').forEach(function(e){
-    e.addEventListener('click',function(){
+document.querySelectorAll('.sign-outt').forEach(function (e) {
+    e.addEventListener('click', function () {
         event.preventDefault()
         localStorage.removeItem('token');
         window.location = 'index-unregister.html';
@@ -492,28 +510,28 @@ document.querySelectorAll('.sign-outt').forEach(function(e){
 })
 
 
-    document.querySelectorAll('.main-unregister').forEach(function(e){
-        e.addEventListener('click',function(){
-            if(localStorage.getItem('token')){
-                event.preventDefault()
-                window.location = 'index.html';
-            }
-            else{
-                window.location = 'index-unregister.html';
-                event.preventDefault()
-            }
-        })
+document.querySelectorAll('.main-unregister').forEach(function (e) {
+    e.addEventListener('click', function () {
+        if (localStorage.getItem('token')) {
+            event.preventDefault()
+            window.location = 'index.html';
+        }
+        else {
+            window.location = 'index-unregister.html';
+            event.preventDefault()
+        }
     })
+})
 
 
 
 /*add wishlist */
-function addItemWishlist(){
+function addItemWishlist() {
     const item = "<div class='item mt-2'><a href='course-detail.html' class='row'><div class='course-card-image col-4'><img src='img/la.jpeg'></div><div class='course-card-main col-8'><div class='course-card-title'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, ex!</div></div></a><div class='course-card-instructor'>LA Orujova</div><div class='course-card-price'><h2>10,99 $</h2> <del>129,99 $</del></div><div data-purpose='add-to-cart'><button type='button' class='udlite-btn udlite-btn-medium udlite-btn-secondary udlite-heading-sm add-to-cart' style='width:100%'>Add to cart</button></div></div>";
-    $( ".wishlist-item" ).append( item );
-    $('.wishlist-none').css('display','none');
+    $(".wishlist-item").append(item);
+    $('.wishlist-none').css('display', 'none');
 }
-function addtocard(e){
+function addtocard(e) {
     const item = "<div class='item mt-2'><a href='course-detail.html' class='row'><div class='course-card-image col-4'><img src='img/la.jpeg'></div><div class='course-card-main col-8'><div class='course-card-title'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, ex!</div></div></a><div class='course-card-instructor'>LA Orujova</div><div class='course-card-price'><h2>10,99 $</h2> <del>129,99 $</del></div><div data-purpose='add-to-cart'><button type='button' class='udlite-btn udlite-btn-medium udlite-btn-secondary udlite-heading-sm add-to-cart' style='width:100%'>Add to cart</button></div></div>";
-    $( ".wishlist-item" ).append( item );
+    $(".wishlist-item").append(item);
 }
