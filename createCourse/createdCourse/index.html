@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../fontawesome-free-5.15.2-web/js/all.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="../fontawesome-free-5.15.2-web/css/all.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- :::::::::::::::::::::::::::::::: HEADER :::::::::::::::::::::::::::: -->
+    <header>
+        <nav class="nav">
+            <div class="nav__info">
+                <a href="../../instructor-course.html" style="text-decoration: none; color: white;">
+                    <i class="fas fa-chevron-left"></i>
+                </a>
+                <h3> Back to course </h3>
+                <h3> php </h3>
+                <h3> DRAFT </h3>
+                <h3> 0 min of video content uploaded </h3>
+            </div>
+            <div class="nav__functionality">
+                <button type="button" id="target__save" class="nav__functionality--save" disabled> Save </button>
+                <button type="button" id="practice__save" class="nav__functionality--save" disabled> Save </button>
+                <button type="button" id="course__save" class="nav__functionality--save" disabled> Save </button>
+                <button type="button" id="price__save" class="nav__functionality--save" disabled> Save </button>
+                <button type="button" id="promotion__save" class="nav__functionality--save" disabled> Save </button>
+                <button type="button" id="message__save" class="nav__functionality--save" disabled> Save </button>
+                <i class="fas fa-cog"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ::::::::::::::::::::::::::::::::: MAIN ::::::::::::::::::::::::: -->
+    <main class="main">
+        <!-- :::::::::::::::::::::: SIDEBAR :::::::::::::::::::: -->
+        <div class="sidebar">
+            <p class="bold1"> Plan your course </p>
+            
+            <div id="target" class="side target__stundents my-4">
+                <div class="side__check">
+                    <i class="target__uncomplete far fa-circle"></i>
+                    <i class="target__complete far fa-check-circle"></i>
+                </div>
+                <h4 class="side__title"> Target Students </h4>
+            </div>
+            <div id="target" class="side structure__page my-4">
+                <div class="side__check">
+                    <i class="target__uncomplete far fa-circle"></i>
+                    <i class="target__complete far fa-check-circle"></i>
+                </div>
+                <h4 class="side__title"> Course Structure </h4>
+            </div>
+            <p class="bold"> Create your content </p>
+            <div id="target" class="side setup__test my-4">
+                <div class="side__check">
+                    <i class="target__uncomplete far fa-circle"></i>
+                    <i class="target__complete far fa-check-circle"></i>
+                </div>
+                <h4 class="side__title"> Setup & test video </h4>
+            </div>
+            <div id="target" class="side film__edit my-4">
+                <div class="side__check">
+                    <i class="target__uncomplete far fa-circle"></i>
+                    <i class="target__complete far fa-check-circle"></i>
+                </div>
+                <h4 class="side__title"> Film & edit </h4>
+            </div>
+            <div id="target" class="side curriculum my-4">
+                <div class="side__check">
+                    <i class="target__uncomplete far fa-circle"></i>
+                    <i class="target__complete far fa-check-circle"></i>
+                </div>
+                <h4 class="side__title"> Curriculum </h4>
+            </div>
+            <div id="target" class="side captions my-4">
+                <div class="side__check">
+                    <i class="target__uncomplete far fa-circle"></i>
+                    <i class="target__complete far fa-check-circle"></i>
+                </div>
+                <h4 class="side__title"> Captions (optional) </h4>
+            </div>
+            <p class="bold"> Publish your course </p>
+            <div id="course" class="side course__landing my-4">
+                <div class="side__check">
+                    <i class="course__uncomplete far fa-circle"></i>
+                    <i class="course__complete far fa-check-circle"></i>
+                </div>
+                <h4 class="side__title"> Course landing page </h4>
+            </div>
+            <div id="price" class="side pricing my-4">
+                <div class="side__check">
+                    <i class="price__uncomplete far fa-circle"></i>
+                    <i class="price__complete far fa-check-circle"></i>
+                </div>
+                <h4 class="side__title"> Pricing </h4>
+            </div>
+            <div id="promotion" class="side promotions my-4">
+                <div class="side__check">
+                    <i class="promotion__uncomplete far fa-circle"></i>
+                    <i class="promotion__complete far fa-check-circle"></i>
+                </div>
+                <h4 class="side__title"> Promotions </h4>
+            </div>
+            <div id="message" class="side course__message my-4">
+                <div class="side__check">
+                    <i class="message__uncomplete far fa-circle"></i>
+                    <i class="message__complete far fa-check-circle"></i>
+                </div>
+                <h4 class="side__title"> Course Messages </h4>
+            </div>
+            <p class="publish" style="cursor: pointer;"> Submit for Review </p>
+        </div>
+
+        <!-- :::::::::::::::::::::::::::: CONTENT ::::::::::::::::::::::::: -->
+        <div class="content">
+        <!-- ::::::::::::::::::::::::: TARGET ::::::::::::::::::: -->
+            <div class="content-page target__students--content">
+                <h1 class="title target__section--title"> Target your students </h1>
+                <hr>
+            
+                <div class="container">
+                    <p class="description__paragraph"> The descriptions you write here will help students decide if your course is
+                        the one for them. </p>
+                    <p class="question"> What will students learn in your course? </p>
+                    <div id="input__parent--first">
+                        <input type="text" class="answer" id="answer1" /> <i class="del1 far fa-trash-alt"></i>
+                    </div>
+                    <div class="add__answer" id="add__answer--first">
+                        <i class="fas fa-plus"></i>
+                        <p>Add an answer</p>
+                    </div>
+            
+                    <p class="question"> Are there any course requirements or prerequisites? </p>
+                    <div id="input__parent--second">
+                        <input type="text" class="answer" id="answer2" /> <i class="del2 far fa-trash-alt"></i>
+                    </div>
+                    <div class="add__answer" id="add__answer--second">
+                        <i class="fas fa-plus"></i>
+                        <p>Add an answer</p>
+                    </div>
+            
+                    <p class="question"> Who are your target students? </p>
+                    <div id="input__parent--third">
+                        <input type="text" class="answer" id="answer3" /> <i class="del3 far fa-trash-alt"></i>
+                    </div>
+                    <div class="add__answer" id="add__answer--third">
+                        <i class="fas fa-plus"></i>
+                        <p>Add an answer</p>
+                    </div>
+                </div>
+            </div>
+
+        <!-- ::::::::::::::::::::::::::: COURSE LANDING ::::::::::::::::: -->
+            <div class="content-page course__landing--content">
+                <h1 class="title"> Course landing page </h1>
+                <hr>
+                <div class="landing container">
+                    <p> Course title </p>
+                    <div class="landing__input">
+                        <input type="text" id="landing__input--first" maxlength="60" data-max-chars="60" class="input">
+                        <span class="input__length" id="title__counter"> 60 </span>
+                    </div>
+            
+                    <p class="mt-4"> Course subtitle </p>
+                    <div class="landing__input">
+                        <input type="text" id="landing__input--second" maxlength="120" data-max-chars="120" class="input">
+                        <span class="input__length" id="subtitle__counter"> 120 </span>
+                    </div>
+            
+                    <p> Course description </p>
+                    <div class="landing__text">
+                        <div class="menu__bar">
+                            <i class="fas fa-bold"></i>
+                            <i class="fas fa-italic"></i>
+                            <i class="fas fa-list-ol"></i>
+                            <i class="fas fa-list-ul"></i>
+                        </div>
+                        <textarea id="description" cols="135" rows="5"></textarea>
+                    </div>
+            
+                    <p> Basic Info </p>
+            
+                    <div class="info__options">
+                        <div class="mr-3">
+                            <select class="lang-form w-100 form-select form-select-lg mb-3 mr-5"
+                                aria-label=".form-select-sm example">
+                                <option selected> English (US) </option>
+                                <option value="1">Azerbaijan</option>
+                                <option value="2">Russian</option>
+                            </select>
+                        </div>
+            
+                        <div class="mx-3">
+                            <select class="level-form w-100 form-select form-select-lg mb-3 mr-5"
+                                aria-label=".form-select-sm example">
+                                <option selected> --Select level- </option>
+                                <option value="1"> Beginner </option>
+                                <option value="2"> Intermediate </option>
+                                <option value="3"> Expert </option>
+                            </select>
+                        </div>
+            
+                        <div class="mx-3">
+                            <div class="info__categories">
+                                <select class="form-select w-100 form-select-lg mb-3 mr-5" aria-label=".form-select-sm example">
+                                    <option selected> Category </option>
+                                    <option value="1"> Category1 </option>
+                                    <option value="2"> Category2 </option>
+                                    <option value="3"> Category3 </option>
+                                </select>
+            
+                                <select class="form-select w-100 form-select-lg mb-3 mr-5" aria-label=".form-select-sm example">
+                                    <option selected> Subcategory </option>
+                                    <option value="1"> Subcategory1 </option>
+                                    <option value="2"> Subcategory2 </option>
+                                    <option value="3"> Subcategory3 </option>
+                                </select>
+            
+                            </div>
+                        </div>
+                    </div>
+            
+                    <p> What is primarily taught in your course? </p>
+                    <input type="text" class="teach__context--input" placeholder="e.g. Landscape Fotography" />
+                </div>
+            
+                <!-- UPLOAD FUNCTIONALITY -->
+                <div class="upload">
+                    <div class="upload__image">
+                        <div class="image">
+                            <p> Course image </p>
+                            <img src="../images/placeholder.png" />
+                        </div>
+                        <div class="upload__functionality">
+                            <p>
+                                Upload your course image here.
+                                It must meet our course image quality standards to be accepted.
+                                Important guidelines:
+                                750x422 pixels; .jpg, .jpeg,. gif, or .png. no text on the image.
+                            </p>
+                            <div class="upload__file">
+                                <div id="file">
+                                    <p class="mt-4"> Upload a file </p>
+                                </div>
+                                <span> Upload File </span>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="upload__video">
+                        <div class="video">
+                            <p> Course image </p>
+                            <img src="../images/placeholder.png" />
+                        </div>
+                        <div class="upload__functionality">
+                            <p>
+                                Upload your course image here.
+                                It must meet our course image quality standards to be accepted.
+                                Important guidelines:
+                                750x422 pixels; .jpg, .jpeg,. gif, or .png. no text on the image.
+                            </p>
+                            <div class="upload__file">
+                                <div id="file">
+                                    <p class="mt-4"> Upload a file </p>
+                                </div>
+                                <span> Upload File </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- iNSTRUCTOR PROFILE -->
+                <div class="instructor">
+                    <p> Instructor Profile(s) </p>
+                    <div class="instructor__profile">
+                        <i class="far fa-user-circle"></i>
+                        <p> Lala Orujova </p>
+                    </div>
+                </div>
+            </div>
+
+        <!-- :::::::::::::::::::::: PRICING ::::::::::::::::::::::: -->
+            <div class="content-page pricing--content">
+                <h1 class="title"> Pricing </h1>
+                <hr>
+                <div class="container">
+                    <p> Course Price Tier </p>
+                    <br>
+                    <br>
+                    <p> Please select the price tier for your course below and click 'Save'. The list price that students will see
+                        in other
+                        currencies is calculated using the price tier matrix, based on the tier that it corresponds to. </p>
+                    <br>
+                    <p> If you're intending to offer your course for free, the total length of video content must be less than 2
+                        hours.Practice
+                        test only courses can not be free. </p>
+            
+                    <div class="pricing__currency">
+                        <div class="currency mx-3">
+                            <select class="currency_form w-100 form-select form-select-lg mb-3 mr-5"
+                                aria-label=".form-select-sm example">
+                                <option selected> USD </option>
+                                <option value="2">AZE</option>
+                                <option value="3">RUB</option>
+                            </select>
+                        </div>
+                        <div class="price">
+                            <select class="form-select w-100 form-select-lg mb-3 mr-5" aria-label=".form-select-sm example">
+                                <option selected> Select </option>
+                                <option value="1"> 19,99 </option>
+                                <option value="2"> 29,99 </option>
+                                <option value="3"> 39,99 </option>
+                                <option value="4"> 49,99 </option>
+                                <option value="5"> 59,99 </option>
+                            </select>
+                        </div>
+                        <span class="save"> Save </span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- :::::::::::::::::::::::: PROMOTIONS ::::::::::::::: -->
+            <div class="content-page promotions--content">
+                <h1 class="title"> Promotions </h1>
+                <hr>
+                <div class="container">
+                    <div class="refer__students">
+                        <h2> Refer students </h2>
+                        <p> Any time a student uses this link, we will credit you with the sale </p>
+                        <div class="promotion__input">
+                            <div class="promotion__input--value">
+                                <p id="link">
+                                    https://www.udemy.com/course/draft/3829116/?referralCode=2372076457236422BD16B179DF67FC </p>
+                            </div>
+                            <p class="copy"> Copy </p>
+                        </div>
+                    </div>
+            
+                    <div class="coupons">
+                        <h2> Coupons </h2>
+                        <div class="container coupon__info">
+                            <p> February Counpons </p>
+                            <p> You cannot create coupons for a free course </p>
+                        </div>
+                    </div>
+            
+                    <div class="active__coupons">
+                        <h4> Active coupons </h4>
+                        <div class="active__coupon--info">
+                            <h3 class="text-center"> No coupon found </h3>
+                        </div>
+                    </div>
+            
+                    <div class="expire__coupons">
+                        <div class="expire__coupons--info">
+                            <h4> Expired Coupons </h4>
+                            <div class="expire__coupons--input">
+                                <input type="text" class="expire__input" />
+                                <i class="fas fa-search"></i>
+                            </div>
+                        </div>
+                        <div class="expire__coupon--info">
+                            <h3 class="text-center"> No coupon found </h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ::::::::::::::::: COURSE MESSAGE ::::::::::::::::::::::::; -->
+        
+            <div class="content-page course__message--content">
+                            <h1 class="title"> Course Messages </h1>
+                            <hr>
+                            <div class="container">
+                                <p> Write messages to your students (optional) that will be sent automatically when they join or complete your
+                                    course to
+                                    encourage students to engage with course content. If you do not wish to send a welcome or congratulations
+                                    message, leave
+                                    the text box blank. </p>
+                        
+                                <p> Welcome message </p>
+                                <div class="message__div mb-5">
+                                    <textarea id="welcome__message" maxlength="1000" data-max-chars="1000" cols="140" rows="6"></textarea>
+                                    <span class="text__counter counter1"> 1000 </span>
+                                </div>
+                                <p> Congratulations message </p>
+                                <div class="message__div">
+                                    <textarea id="congratulations__message" maxlength="1000" data-max-chars="1000" cols="140"
+                                        rows="6"></textarea>
+                                    <span class="text__counter counter2"> 1000 </span>
+                                </div>
+                            </div>
+            </div>
+                        
+            <!-- ::::::::::: COURSE STRUCTURE ::::::::::: -->
+            <div class="content-page content__coursestructure" style="display: none;">
+                <h2 class="coursestructure__head"> Course structure </h2>
+
+                <div class="coursestructure__label">
+                    <div class="label1">
+                        <h2> There's a course in you. Plan it out. </h2>
+                        <p> Planning your course carefully will create a clear learning path for students and help you once you film. Think down to
+                        the details of each lecture including the skill you’ll teach, estimated video length, practical activities to include,
+                        and how you’ll create introductions and summaries. </p>
+                    </div>
+                    <div class="label2"></div>
+                </div>
+
+                <div class="coursestructure__tips container">
+                    <h2 class="tips"> Tips </h2>
+                    <div class="tips__context">
+                        <p class="context__head">
+                            Create an online
+                        </p>
+                        <p class="context__main">
+                            Decide what skills you’ll teach and how you’ll teach them. Organize lectures into sections. Each section should have 3-7
+                            lectures, and include at least one assignment or practical activity.
+                        </p>
+                        <p class="context__head">
+                            Create an online
+                        </p>
+                        <p class="context__main">
+                            Decide what skills you’ll teach and how you’ll teach them. Organize lectures into sections. Each section should have
+                            3-7
+                            lectures, and include at least one assignment or practical activity.
+                        </p>
+                        <p class="context__head">
+                            Create an online
+                        </p>
+                        <p class="context__main">
+                            Decide what skills you’ll teach and how you’ll teach them. Organize lectures into sections. Each section should have
+                            3-7
+                            lectures, and include at least one assignment or practical activity.
+                        </p>
+                        <p class="context__head">
+                            Create an online
+                        </p>
+                        <p class="context__main">
+                            Decide what skills you’ll teach and how you’ll teach them. Organize lectures into sections. Each section should have
+                            3-7
+                            lectures, and include at least one assignment or practical activity.
+                        </p>
+                        <p class="context__head">
+                            Create an online
+                        </p>
+                        <p class="context__main">
+                            Decide what skills you’ll teach and how you’ll teach them. Organize lectures into sections. Each section should have
+                            3-7
+                            lectures, and include at least one assignment or practical activity.
+                        </p>
+                        <p class="context__head">
+                            Create an online
+                        </p>
+                        <p class="context__main">
+                            Decide what skills you’ll teach and how you’ll teach them. Organize lectures into sections. Each section should have
+                            3-7
+                            lectures, and include at least one assignment or practical activity.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="coursestructure__requirements container">
+                    <h2 class="requirements"> Requirements </h2>
+                    <div class="requirements__list">
+                        <ul>
+                            <li>Your course has at least five lectures</li>
+                            <li>All lectures add up to at least 30+ minutes of total video</li>
+                            <li>You course is composed of valuable educational content</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ::::::::::: SETUP & TEST VIDEO :::::::::::: -->
+            <div class="content-page content__setup" style="display: none;">    
+                <h2 class="setup__head"> SETUP & TEST VIDEO </h2>
+                
+                <div class="setup__label">
+                    <div class="label1">
+                        <h2> There's a course in you. Plan it out. </h2>
+                        <p> Planning your course carefully will create a clear learning path for students and help you once you film.
+                            Think down to
+                            the details of each lecture including the skill you’ll teach, estimated video length, practical activities
+                            to include,
+                            and how you’ll create introductions and summaries. </p>
+                    </div>
+                    <div class="label2"></div>
+                </div>
+                
+                <div class="setup__tips container">
+                    <h2 class="tips"> Tips </h2>
+                    <div class="tips__context">
+                        <p class="context__head">
+                            Create an online
+                        </p>
+                        <p class="context__main">
+                            Decide what skills you’ll teach and how you’ll teach them. Organize lectures into sections. Each section
+                            should have 3-7
+                            lectures, and include at least one assignment or practical activity.
+                        </p>
+                        <p class="context__head">
+                            Create an online
+                        </p>
+                        <p class="context__main">
+                            Decide what skills you’ll teach and how you’ll teach them. Organize lectures into sections. Each section
+                            should have
+                            3-7
+                            lectures, and include at least one assignment or practical activity.
+                        </p>
+                        <p class="context__head">
+                            Create an online
+                        </p>
+                        <p class="context__main">
+                            Decide what skills you’ll teach and how you’ll teach them. Organize lectures into sections. Each section
+                            should have
+                            3-7
+                            lectures, and include at least one assignment or practical activity.
+                        </p>
+                        <p class="context__head">
+                            Create an online
+                        </p>
+                        <p class="context__main">
+                            Decide what skills you’ll teach and how you’ll teach them. Organize lectures into sections. Each section
+                            should have
+                            3-7
+                            lectures, and include at least one assignment or practical activity.
+                        </p>
+                        <p class="context__head">
+                            Create an online
+                        </p>
+                        <p class="context__main">
+                            Decide what skills you’ll teach and how you’ll teach them. Organize lectures into sections. Each section
+                            should have
+                            3-7
+                            lectures, and include at least one assignment or practical activity.
+                        </p>
+                        <p class="context__head">
+                            Create an online
+                        </p>
+                        <p class="context__main">
+                            Decide what skills you’ll teach and how you’ll teach them. Organize lectures into sections. Each section
+                            should have
+                            3-7
+                            lectures, and include at least one assignment or practical activity.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="setup__requirements">
+                    <h2 class="requirements"> Requirements </h2>
+                    <div class="requirements__list">
+                        <ul>
+                            <li>Your course has at least five lectures</li>
+                            <li>All lectures add up to at least 30+ minutes of total video</li>
+                            <li>You course is composed of valuable educational content</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- :::::::::::::: FILM & EDIT ::::::::::::: -->
+            <div class="content-page content__film" style="display: none;">
+                <h2 class="film__head"> FILM & EDIT </h2>
+                
+                <div class="film__label">
+                    <div class="label1">
+                        <h2> There's a course in you. Plan it out. </h2>
+                        <p> Planning your course carefully will create a clear learning path for students and help you once you film.
+                            Think down to
+                            the details of each lecture including the skill you’ll teach, estimated video length, practical activities
+                            to include,
+                            and how you’ll create introductions and summaries. </p>
+                    </div>
+                    <div class="label2"></div>
+                </div>
+                
+                <div class="film__tips container">
+                    <h2 class="tips"> Tips </h2>
+                    <div class="tips__context">
+                        <p class="context__head">
+                            Create an online
+                        </p>
+                        <p class="context__main">
+                            Decide what skills you’ll teach and how you’ll teach them. Organize lectures into sections. Each section
+                            should have 3-7
+                            lectures, and include at least one assignment or practical activity.
+                        </p>
+                        <p class="context__head">
+                            Create an online
+                        </p>
+                        <p class="context__main">
+                            Decide what skills you’ll teach and how you’ll teach them. Organize lectures into sections. Each section
+                            should have
+                            3-7
+                            lectures, and include at least one assignment or practical activity.
+                        </p>
+                        <p class="context__head">
+                            Create an online
+                        </p>
+                        <p class="context__main">
+                            Decide what skills you’ll teach and how you’ll teach them. Organize lectures into sections. Each section
+                            should have
+                            3-7
+                            lectures, and include at least one assignment or practical activity.
+                        </p>
+                        <p class="context__head">
+                            Create an online
+                        </p>
+                        <p class="context__main">
+                            Decide what skills you’ll teach and how you’ll teach them. Organize lectures into sections. Each section
+                            should have
+                            3-7
+                            lectures, and include at least one assignment or practical activity.
+                        </p>
+                        <p class="context__head">
+                            Create an online
+                        </p>
+                        <p class="context__main">
+                            Decide what skills you’ll teach and how you’ll teach them. Organize lectures into sections. Each section
+                            should have
+                            3-7
+                            lectures, and include at least one assignment or practical activity.
+                        </p>
+                        <p class="context__head">
+                            Create an online
+                        </p>
+                        <p class="context__main">
+                            Decide what skills you’ll teach and how you’ll teach them. Organize lectures into sections. Each section
+                            should have
+                            3-7
+                            lectures, and include at least one assignment or practical activity.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="film__requirements">
+                    <h2 class="requirements"> Requirements </h2>
+                    <div class="requirements__list">
+                        <ul>
+                            <li>Your course has at least five lectures</li>
+                            <li>All lectures add up to at least 30+ minutes of total video</li>
+                            <li>You course is composed of valuable educational content</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ::::::::::::::: CURRICULUM ::::::::::::: -->
+            <div class="content-page content__curriculum" style="display: none;">
+                <h2 class="curriculum__head"> Curriculum </h2>
+                <hr>
+                <div class="curriculum__container">
+                    <p>Start putting together your course by creating sections, lectures and practice (quizzes, coding exercises and
+                    assignments).
+                    
+                    If you’re intending to offer your course for free, the total length of video content must be less than 2 hours.</p>
+                    <div class="section"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- <input type="file" name="video" id="video"/> -->
+
+<script src="./main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+    crossorigin="anonymous"></script>
+</body>
+</html>
