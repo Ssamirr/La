@@ -549,9 +549,3 @@ $.ajax({
     }).fail(function() {
         console.log("error");
     });
-
-if ('localStorage' in window && window.localStorage !== null) {
-    alert('can use');
-}else{
-    alert('cannot use');
-}
