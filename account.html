@@ -1606,7 +1606,7 @@
                     <div class="side-nav db-sm" data-purpose="side-menu">
                         <div id="user-short">
                             <div class="fx-c">
-                                <div aria-label="Behruz Quliyev" class="user-avatar user-avatar--initials "
+                                <div aria-label="" class="user-avatar user-avatar--initials "
                                     data-purpose="user-avatar" style="width: 120px; font-size: 36px;">
                                     <div class="user-avatar__inner fx-c">
                                         <span class="user-initials">LA</span>
@@ -1660,7 +1660,7 @@
                                     <div id="tooltip-reference-email" class="tooltip-reference">
                                         <div class="input-group w100p">
                                             <div class="form-control">
-                                                Your email address is <b>q.behruz1@gmail.com</b>
+                                                Your email address is <b class="your_email_adress"></b>
                                             </div>
                                             <span
                                                 class="edit-handle input-group-btn ud-component--user-manage--edit-email-button"
@@ -2271,13 +2271,6 @@
     </svg>
 
 
-
-
-
-
-
-
-
     <!-- JS -->
 
 
@@ -2288,6 +2281,17 @@
     <script src="js/main.js"></script>
 	<script>
 		// update form
+
+        $.ajax({
+            url: `http://64.225.98.172/api/account/auth/users/1/`,
+            type: "GET",
+        }).done(function(data) {
+			$('.your_email_adress').html(data.email);
+
+        }).fail(function() {
+            console.log("error");
+        });
+
         $(".LA_account_password_form").submit(function(e) {
             e.preventDefault();
             let url = "http://64.225.98.172/api/account/auth/users/set_password/";
@@ -2301,7 +2305,7 @@
 						'csrfmiddlewaretoken':$("input[name=csrfmiddlewaretoken]").val()
 					}, // serializes the form's elements.
 					success: function(data){
-						console.log('okey'); // show response from the php script.
+						console.log('okey'); 
 					},
 					error: function (data) {
 						console.log(data);
